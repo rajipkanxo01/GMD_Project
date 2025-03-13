@@ -29,9 +29,9 @@ We will be using the following characters assets in *Lumberjack Warrior*.
     ![Enemies.png](Enemies.png)
 
 2. Boss Enemy
-    - **Final Boss**: A giant troll-like creature serving as the final challenge.
-    - **Asset Used**: [Troll Boss Sprite](https://craftpix.net/freebies/2d-game-troll-free-character-sprites/?num=1&count=125&sq=boss&pos=11)
-    - **Abilities**: Heavy high damage attacks and increased difficulty
+    - **Final Boss**: Frost Guardian serving as final challenge.
+    - **Asset Used**: [Frost Guardian Final Boss Sprite](https://chierit.itch.io/boss-frost-guardian)
+    - **Abilities**: Different type of attack pattern and projectile based attack
     ![Final boss.png](Final%20boss.png)   
 
 These assets will define the visual and gameplay identity of Lumberjack Warrior.
