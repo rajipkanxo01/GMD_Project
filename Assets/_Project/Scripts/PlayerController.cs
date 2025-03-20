@@ -11,10 +11,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpingPower = 16f;
     private float horizontalInput;
     private bool isFacingRight = true;
+    private Animator animator;
+    private bool isGrounded;
     
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -28,6 +31,9 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
+        isGrounded = IsGrounded();
+        animator.SetBool("grounded", isGrounded);
+        animator.SetBool("move",horizontalInput!=0);
     }
 
     public void Move(InputAction.CallbackContext context) 
@@ -53,6 +59,7 @@ public class PlayerController : MonoBehaviour
         if (context.performed && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
+            animator.SetTrigger("Jump");
         }
     }
 
