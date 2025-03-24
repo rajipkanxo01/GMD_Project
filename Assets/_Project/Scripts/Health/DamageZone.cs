@@ -5,7 +5,7 @@ namespace _Project.Scripts.Health {
         private void OnTriggerStay2D(Collider2D otherGameObject) {
             PlayerController controller = otherGameObject.GetComponent<PlayerController>();
             if (controller != null) {
-               
+               controller.TakeDamage(1);
             }
         }
     }

@@ -86,6 +86,7 @@ namespace _Project.Scripts {
             }
         }
 
+        //Decreases health. Also has cooldown time in scenarios where damage zone can continuously decrease player's health
         public void TakeDamage(int amount) {
             if (amount < 0) {
                 if (isInvincible) {
@@ -98,17 +99,15 @@ namespace _Project.Scripts {
             healthBar.SetHealth(currentHealth);
         }
 
+        //Adds health
         public void AddHealth(int amount) {
             currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+            healthBar.SetHealth(currentHealth);
         }
+        
+        public int Health => currentHealth;
 
-        public int GetCurrentHealth() {
-            return currentHealth;
-        }
-
-        public int GetMaxHealth() {
-            return maxHealth;
-        }
+        public int MaxHealth => maxHealth;
 
     }
 }
