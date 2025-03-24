@@ -109,20 +109,7 @@ namespace _Project.Scripts.Enemies
 
         private void HandleAttack()
         {
-            // Ensure we are not running
-            if (_animator.GetBool(Run))
-            {
-                _animator.SetBool(Run, false);
-                return;
-            }
-
-            AnimatorStateInfo stateInfo = _animator.GetCurrentAnimatorStateInfo(0);
-
-            if (stateInfo.IsName("Goblin_Idle") && _cooldownTimer >= attackCooldown)
-            {
-                _cooldownTimer = 0f;
-                _animator.SetTrigger(Attack1);
-            }
+            Debug.Log("Attacking player");
         }
 
         private void FlipSprite(Transform target)
