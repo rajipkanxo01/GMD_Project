@@ -1,24 +1,46 @@
+using _Project.Scripts.Health;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace _Project.Scripts {
     public class PlayerController : MonoBehaviour
     {
-        public Rigidbody2D rb;
+        private Rigidbody2D rb;
         public Transform groundCheck;
         public LayerMask groundLayer;
-
-        [SerializeField] private float speed = 5f;
-        [SerializeField] private float jumpingPower = 16f;
+        
         private float horizontalInput;
         private bool isFacingRight = true;
         private Animator animator;
         private bool isGrounded;
         
+        [Header("Movement")]
+        [SerializeField] private float speed = 5f;
+        [SerializeField] private float jumpingPower = 16f;
+        
+        [Header("Health")]
+        [SerializeField] private int maxHealth = 100;
+        [SerializeField] private int currentHealth;
+        [SerializeField] private HealthBar healthBar;
+        [SerializeField] private float invincibleTime = 2f;
+        private bool isInvincible;
+        private float cooldownTime;
+        
+        
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
+            currentHealth = maxHealth;
+        }
+
+        void Update() {
+            if (isInvincible) {
+                cooldownTime -= Time.deltaTime;
+                if (cooldownTime <= 0) {
+                    isInvincible = false;
+                }
+            }
         }
 
         void FixedUpdate()
@@ -62,6 +84,30 @@ namespace _Project.Scripts {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
                 animator.SetTrigger("Jump");
             }
+        }
+
+        public void TakeDamage(int amount) {
+            if (amount < 0) {
+                if (isInvincible) {
+                    return;
+                }
+                isInvincible = true;
+                cooldownTime = invincibleTime;
+            }
+            currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
+            healthBar.SetHealth(currentHealth);
+        }
+
+        public void AddHealth(int amount) {
+            currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        }
+
+        public int GetCurrentHealth() {
+            return currentHealth;
+        }
+
+        public int GetMaxHealth() {
+            return maxHealth;
         }
 
     }

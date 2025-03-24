@@ -2,12 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace _Project.Scripts.Health {
-    public class NewMonoBehaviourScript : MonoBehaviour
+    public class HealthBar : MonoBehaviour
     {
         [SerializeField] private Slider slider;
         [SerializeField] private Gradient gradient;
         [SerializeField] private Image healthFill;
-        public void Awake() {
+        void Awake() {
             slider = GetComponent<Slider>();
         }
 
