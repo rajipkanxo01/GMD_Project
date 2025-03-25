@@ -31,7 +31,11 @@ namespace _Project.Scripts {
         {
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
+        }
+
+        void Start() {
             currentHealth = maxHealth;
+            healthBar.SetMaxHealthLevel(maxHealth);
         }
 
         void Update() {
@@ -96,13 +100,13 @@ namespace _Project.Scripts {
                 cooldownTime = invincibleTime;
             }
             currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
-            healthBar.SetHealth(currentHealth);
+            healthBar.SetHealthLevel(currentHealth);
         }
 
         //Adds health
         public void AddHealth(int amount) {
             currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-            healthBar.SetHealth(currentHealth);
+            healthBar.SetHealthLevel(currentHealth);
         }
         
         public int Health => currentHealth;

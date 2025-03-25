@@ -11,13 +11,13 @@ namespace _Project.Scripts.Health {
             slider = GetComponent<Slider>();
         }
 
-        public void SetHealth(int health) {
+        public void SetHealthLevel(int health) {
             slider.value = health;
             healthFill.fillAmount = health / 100f;
             healthFill.color = gradient.Evaluate(health / 100f);
         }
 
-        public void SetMaxHealth(int health) {
+        public void SetMaxHealthLevel(int health) {
             slider.maxValue = health;
             slider.value = health;
             healthFill.fillAmount = health / 100f;
