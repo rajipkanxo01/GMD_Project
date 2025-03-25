@@ -18,33 +18,9 @@ namespace _Project.Scripts {
         [SerializeField] private float speed = 5f;
         [SerializeField] private float jumpingPower = 16f;
         
-        [Header("Health")]
-        [SerializeField] private int maxHealth = 100;
-        [SerializeField] private int currentHealth;
-        [SerializeField] private HealthBar healthBar;
-        [SerializeField] private float invincibleTime = 2f;
-        private bool isInvincible;
-        private float cooldownTime;
-        
-        
-        private void Awake()
-        {
+        private void Awake() {
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
-        }
-
-        void Start() {
-            currentHealth = maxHealth;
-            healthBar.SetMaxHealthLevel(maxHealth);
-        }
-
-        void Update() {
-            if (isInvincible) {
-                cooldownTime -= Time.deltaTime;
-                if (cooldownTime <= 0) {
-                    isInvincible = false;
-                }
-            }
         }
 
         void FixedUpdate()
@@ -89,29 +65,5 @@ namespace _Project.Scripts {
                 animator.SetTrigger("Jump");
             }
         }
-
-        //Decreases health. Also has cooldown time in scenarios where damage zone can continuously decrease player's health
-        public void TakeDamage(int amount) {
-            if (amount < 0) {
-                if (isInvincible) {
-                    return;
-                }
-                isInvincible = true;
-                cooldownTime = invincibleTime;
-            }
-            currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
-            healthBar.SetHealthLevel(currentHealth);
-        }
-
-        //Adds health
-        public void AddHealth(int amount) {
-            currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-            healthBar.SetHealthLevel(currentHealth);
-        }
-        
-        public int Health => currentHealth;
-
-        public int MaxHealth => maxHealth;
-
     }
 }

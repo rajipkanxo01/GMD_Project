@@ -872,10 +872,8 @@ MonoBehaviour:
     m_Bits: 64
   speed: 5
   jumpingPower: 5
-  maxHealth: 100
   currentHealth: 0
-  healthBar: {fileID: 0}
-  invincibleTime: 2
+  healthBar: {fileID: 1473281602}
 --- !u!95 &971840288
 Animator:
   serializedVersion: 7
@@ -1246,6 +1244,9 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   healthFill: {fileID: 505942460}
+  invincibleTime: 2
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
