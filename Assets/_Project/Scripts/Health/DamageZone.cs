@@ -2,11 +2,16 @@ using UnityEngine;
 
 namespace _Project.Scripts.Health {
     public class DamageZone : MonoBehaviour {
-        private PlayerHealthBar playerHealthBar;
-        private void OnTriggerStay2D(Collider2D otherGameObject) {
-            PlayerController controller = otherGameObject.GetComponent<PlayerController>();
+        private void OnTriggerStay2D(Collider2D collider) {
+            PlayerController controller = collider.GetComponent<PlayerController>();
             if (controller != null) {
-               playerHealthBar.TakeObstacleDamage(1);
+                PlayerHealthBar playerHealthBar = collider.gameObject.GetComponent<PlayerHealthBar>();
+                if (playerHealthBar == null) {
+                    playerHealthBar = FindObjectOfType<PlayerHealthBar>();
+                }
+                if (playerHealthBar != null) {
+                    playerHealthBar.TakeObstacleDamage(5);
+                }
             }
         }
     }

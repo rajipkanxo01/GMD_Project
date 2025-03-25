@@ -30,7 +30,7 @@ namespace _Project.Scripts.Health {
                     isInvincible = false;
                 }
             }
-
+        
             if (Input.GetKeyDown(KeyCode.Q)) {
                 Debug.Log("Q");
                 DecreasePlayerHealth(10);
@@ -48,7 +48,7 @@ namespace _Project.Scripts.Health {
             currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
             SetHealthLevel(currentHealth);
         }
-
+        
         //Decrease health
         public void DecreasePlayerHealth(int amount) {
             currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
@@ -76,7 +76,7 @@ namespace _Project.Scripts.Health {
         }
         
         public int Health => currentHealth;
-
+        
         public int MaxHealth => maxHealth;
     }
 }

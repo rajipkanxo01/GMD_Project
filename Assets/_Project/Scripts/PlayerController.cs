@@ -17,7 +17,7 @@ namespace _Project.Scripts {
         [Header("Movement")]
         [SerializeField] private float speed = 5f;
         [SerializeField] private float jumpingPower = 16f;
-        
+        [SerializeField] private PlayerHealthBar playerHealthBar;
         private void Awake() {
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
