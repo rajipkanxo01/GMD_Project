@@ -940,8 +940,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.13, y: 2.89, z: 0}
-  m_LocalScale: {x: 2.0917, y: 2.312135, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 164422801}
   m_Father: {fileID: 0}
@@ -1037,7 +1037,10 @@ MonoBehaviour:
     m_Bits: 64
   speed: 5
   jumpingPower: 5
-  playerHealthBar: {fileID: 1473281602}
+  healthBar: {fileID: 1473281602}
+  invincibleTime: 2
+  maxHealth: 100
+  currentHealth: 0
 --- !u!95 &971840288
 Animator:
   serializedVersion: 7
@@ -1465,9 +1468,6 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   healthFill: {fileID: 505942460}
-  invincibleTime: 2
-  maxHealth: 100
-  currentHealth: 0
 --- !u!1001 &6655642900568107132
 PrefabInstance:
   m_ObjectHideFlags: 0
