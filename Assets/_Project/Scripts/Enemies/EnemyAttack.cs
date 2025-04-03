@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using _Project.Scripts.Health;
 using UnityEngine;
 
 namespace _Project.Scripts.Enemies
@@ -26,6 +27,11 @@ namespace _Project.Scripts.Enemies
         [SerializeField] private float pointReachedThreshold = 0.1f;
         [SerializeField] private float waitTimeAtPoint = 1f;
 
+        [Header("Health")] 
+        [SerializeField] private int currentHealth;
+        [SerializeField] private int maxHealth = 100;
+        [SerializeField] private HealthBar healthBar;
+        
         private State _currentState = State.Patrol;
         private Animator _animator;
         private float _cooldownTimer = Mathf.Infinity;
@@ -40,6 +46,11 @@ namespace _Project.Scripts.Enemies
         private void Awake()
         {
             _animator = GetComponent<Animator>();
+        }
+
+        private void Start() {
+            currentHealth = maxHealth;
+            healthBar.SetMaxHealthLevel(maxHealth);
         }
 
         private void Update()
@@ -60,6 +71,11 @@ namespace _Project.Scripts.Enemies
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
+            }
+            
+            if (Input.GetKeyDown(KeyCode.Q)) {
+                Debug.Log("Q");
+                TakeDamage(20);
             }
         }
 
@@ -109,20 +125,7 @@ namespace _Project.Scripts.Enemies
 
         private void HandleAttack()
         {
-            // Ensure we are not running
-            if (_animator.GetBool(Run))
-            {
-                _animator.SetBool(Run, false);
-                return;
-            }
-
-            AnimatorStateInfo stateInfo = _animator.GetCurrentAnimatorStateInfo(0);
-
-            if (stateInfo.IsName("Goblin_Idle") && _cooldownTimer >= attackCooldown)
-            {
-                _cooldownTimer = 0f;
-                _animator.SetTrigger(Attack1);
-            }
+            Debug.Log("Attacking player");
         }
 
         private void FlipSprite(Transform target)
@@ -160,6 +163,18 @@ namespace _Project.Scripts.Enemies
             {
                 Debug.Log("Player damaged: " + attackDamage);
             }
+        }
+
+        private void TakeDamage(int damage) {
+            currentHealth -= damage;
+            healthBar.SetHealthLevel(currentHealth);
+            if (currentHealth <= 0) {
+             Die();
+            }
+        }
+        
+        private void Die() {
+            Destroy(gameObject);
         }
     }
 }
