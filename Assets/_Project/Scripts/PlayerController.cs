@@ -1,121 +1,218 @@
 using _Project.Scripts.Health;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
-namespace _Project.Scripts {
+namespace _Project.Scripts
+{
     public class PlayerController : MonoBehaviour
     {
-        private Rigidbody2D rb;
-        public Transform groundCheck;
-        public LayerMask groundLayer;
-        
-        private float horizontalInput;
-        private bool isFacingRight = true;
-        private Animator animator;
-        private bool isGrounded;
-        
-        [Header("Movement")]
+        #region Components
+
+        private Rigidbody2D _rb;
+        private Animator _animator;
+
+        #endregion
+
+        #region Movement
+
+        [Header("Movement Settings")]
         [SerializeField] private float speed = 5f;
+      
+        private float _horizontalInput;
+        private bool _isFacingRight = true;
+
+        #endregion
+
+        #region Jump
+        [Header("Jump Settings")]
+        [SerializeField] private float fallMultiplier = 2.5f;
         [SerializeField] private float jumpingPower = 16f;
-        [SerializeField] private HealthBar healthBar;
+        [SerializeField] private float jumpTime;
+        [SerializeField] private float jumpMultiplier;
+        [SerializeField] private Transform groundCheck;
+        [SerializeField] private LayerMask groundLayer;
         
-        [Header("Health")]
-        [SerializeField] private float invincibleTime = 2f;
+        private bool _isGrounded;
+        private Vector2 _gravityMultiplier;
+        private bool _isJumping;
+        private float _jumpCounter;
+        private Vector2 _vecGravity;
+        #endregion
+
+        #region Health
+        [Header("Health Settings")]
         [SerializeField] private int maxHealth = 100;
-        [SerializeField] private int currentHealth;
-        
-        private bool isInvincible { get; set; }
-        private float cooldownTime;
-        private void Awake() {
-            rb = GetComponent<Rigidbody2D>();
-            animator = GetComponent<Animator>();
+        [SerializeField] private float invincibleTime = 2f;
+        [SerializeField] private HealthBar healthBar;
+        private int _currentHealth;
+        private bool _isInvincible;
+        private float _invincibilityCooldown;
+
+        #endregion
+
+        #region Unity Methods
+
+        private void Awake()
+        {
+            _rb = GetComponent<Rigidbody2D>();
+            _animator = GetComponent<Animator>();
+            _gravityMultiplier = new Vector2(0, -Physics2D.gravity.y);
         }
-        
-        void Start() {
-            currentHealth = maxHealth;
+
+        private void Start()
+        {
+            _currentHealth = maxHealth;
+            _vecGravity = new Vector2(0, -Physics2D.gravity.y);
             healthBar.SetMaxHealthLevel(maxHealth);
         }
-        
-        void Update() {
-            if (isInvincible) {
-                cooldownTime -= Time.deltaTime;
-                if (cooldownTime <= 0) {
-                    isInvincible = false;
+
+        private void Update()
+        {
+            HandleInvincibility();
+            ApplyFallMultiplier();
+
+            // Handle held jump (variable jump height)
+            if (_isJumping && _rb.linearVelocity.y > 0)
+            {
+                _jumpCounter += Time.deltaTime;
+
+                if (_jumpCounter < jumpTime)
+                {
+                    _rb.linearVelocity += _vecGravity * (jumpMultiplier * Time.deltaTime);
+                }
+                else
+                {
+                    _isJumping = false;
                 }
             }
         }
 
-        void FixedUpdate()
+        private void FixedUpdate()
         {
-            rb.linearVelocity = new Vector2 (horizontalInput*speed, rb.linearVelocity.y);
-            if(!isFacingRight && horizontalInput > 0f) 
-            {
-                Flip();
-            }
-            else if (isFacingRight && horizontalInput < 0f)
-            {
-                Flip();
-            }
-            isGrounded = IsGrounded();
-            animator.SetBool("grounded", isGrounded);
-            animator.SetBool("move",horizontalInput!=0);
+            MovePlayer();
+            UpdateAnimationStates();
         }
 
-        public void Move(InputAction.CallbackContext context) 
-        {
-            Vector2 input = context.ReadValue<Vector2>();
-            horizontalInput = input.x;
-        }
-        private bool IsGrounded()
-        {
-            return Physics2D.OverlapCircle(groundCheck.position,0.2f,groundLayer);
-        }
+        #endregion
 
-        private void Flip() 
+        #region Input Methods
+
+        public void Move(InputAction.CallbackContext context)
         {
-            isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
+            _horizontalInput = context.ReadValue<Vector2>().x;
         }
 
         public void Jump(InputAction.CallbackContext context)
         {
-            if (context.performed && IsGrounded())
+            if (context.started && _isGrounded)
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
-                animator.SetTrigger("Jump");
+                _isJumping = true;
+                _jumpCounter = 0f;
+
+                _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, 0f);
+                _rb.AddForce(Vector2.up * jumpingPower, ForceMode2D.Impulse);
+                _animator.SetTrigger("Jump");
+            }
+
+            if (context.canceled)
+            {
+                _isJumping = false;
             }
         }
-        
-        //Decreases health when collided with a hazard. Also has cooldown time in scenarios where damage zone can continuously decrease player's health
-        public void TakeObstacleDamage(int amount) {
-            if (isInvincible) {
-                return;
+
+
+        #endregion
+
+        #region Movement Helpers
+
+        private void MovePlayer()
+        {
+            _rb.linearVelocity = new Vector2(_horizontalInput * speed, _rb.linearVelocity.y);
+
+            if ((_isFacingRight && _horizontalInput < 0f) || (!_isFacingRight && _horizontalInput > 0f))
+            {
+                Flip();
             }
-            isInvincible = true;
-            cooldownTime = invincibleTime;
-            
-            currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
-            healthBar.SetHealthLevel(currentHealth);
+
+            _isGrounded = IsGrounded();
         }
-        
-        
-        //Decreases health
-        public void DecreaseHealth(int amount) {
-            currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
-            healthBar.SetHealthLevel(currentHealth);
+
+        private void Flip()
+        {
+            _isFacingRight = !_isFacingRight;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1f;
+            transform.localScale = scale;
         }
-        
-        //Adds health
-        public void AddPlayerHealth(int amount) {
-            currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-            healthBar.SetHealthLevel(currentHealth);
+
+        private void ApplyFallMultiplier()
+        {
+            if (_rb.linearVelocity.y < 0)
+            {
+                _rb.linearVelocity -= _vecGravity * (fallMultiplier * Time.deltaTime);
+            }
         }
-        
-        public int CurrentHealth => currentHealth;
-        
+
+        private bool IsGrounded()
+        {
+            return Physics2D.OverlapCircle(groundCheck.position, 0.02f, groundLayer);
+        }
+
+        private void UpdateAnimationStates()
+        {
+            _animator.SetBool("grounded", _isGrounded);
+            _animator.SetBool("move", _horizontalInput != 0);
+        }
+
+        #endregion
+
+        #region Invincibility and Health
+
+        private void HandleInvincibility()
+        {
+            if (!_isInvincible) return;
+
+            _invincibilityCooldown -= Time.deltaTime;
+            if (_invincibilityCooldown <= 0)
+            {
+                _isInvincible = false;
+            }
+        }
+
+        public void TakeObstacleDamage(int amount)
+        {
+            if (_isInvincible) return;
+
+            _isInvincible = true;
+            _invincibilityCooldown = invincibleTime;
+
+            ApplyDamage(amount);
+        }
+
+        public void DecreaseHealth(int amount)
+        {
+            ApplyDamage(amount);
+        }
+
+        public void AddPlayerHealth(int amount)
+        {
+            _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, maxHealth);
+            healthBar.SetHealthLevel(_currentHealth);
+        }
+
+        private void ApplyDamage(int amount)
+        {
+            _currentHealth = Mathf.Clamp(_currentHealth - amount, 0, maxHealth);
+            healthBar.SetHealthLevel(_currentHealth);
+        }
+
+        #endregion
+
+        #region Properties
+
+        public int CurrentHealth => _currentHealth;
         public int MaxHealth => maxHealth;
+
+        #endregion
     }
 }

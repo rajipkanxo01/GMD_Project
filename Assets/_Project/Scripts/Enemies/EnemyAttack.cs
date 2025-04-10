@@ -70,12 +70,7 @@ namespace _Project.Scripts.Enemies
                     HandleAttack();
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException();
-            }
-            
-            if (Input.GetKeyDown(KeyCode.Q)) {
-                Debug.Log("Q");
-                TakeDamage(20);
+                    return;
             }
         }
 
