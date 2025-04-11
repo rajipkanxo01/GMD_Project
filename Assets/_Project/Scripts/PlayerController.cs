@@ -79,6 +79,7 @@ namespace _Project.Scripts
                 if (_jumpCounter < jumpTime)
                 {
                     _rb.linearVelocity += _vecGravity * (jumpMultiplier * Time.deltaTime);
+                    _animator.SetTrigger("Jump");
                 }
                 else
                 {

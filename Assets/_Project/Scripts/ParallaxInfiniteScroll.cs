@@ -7,32 +7,39 @@ namespace _Project.Scripts
     {
         [SerializeField] private GameObject _camera;
 
-        [Range(0f, 1f)] [SerializeField] private float _parallaxEffect;
+        [Range(0f, 1f)] [SerializeField] private float _parallaxEffectX = 0.5f;
+        [Range(0f, 1f)] [SerializeField] private float _parallaxEffectY = 0.5f;
 
-        private float _startPos;
-        private float _length;
+        private Vector3 _startPos;
+        private float _lengthX;
+        private float _lengthY;
 
         private void Start()
         {
-            _startPos = transform.position.x;
-            _length = GetComponent<SpriteRenderer>().bounds.size.x; 
+            _startPos = transform.position;
+            _lengthX = GetComponent<SpriteRenderer>().bounds.size.x;
+            _lengthY = GetComponent<SpriteRenderer>().bounds.size.y;
         }
 
         private void FixedUpdate()
         {
-            float distance = _camera.transform.position.x * _parallaxEffect;
-            float movement = _camera.transform.position.x * (1 - _parallaxEffect);
-            
-            transform.position = new Vector3(_startPos + distance, transform.position.y, transform.position.z);
-            
-            if (movement > _startPos + _length)
-            {
-                _startPos += _length;
-            }
-            else if (movement < _startPos - _length)
-            {
-                _startPos -= _length;
-            }
+            float distanceX = _camera.transform.position.x * _parallaxEffectX;
+            float distanceY = _camera.transform.position.y * _parallaxEffectY;
+
+            float movementX = _camera.transform.position.x * (1 - _parallaxEffectX);
+            float movementY = _camera.transform.position.y * (1 - _parallaxEffectY);
+
+            transform.position = new Vector3(_startPos.x + distanceX, _startPos.y + distanceY, transform.position.z);
+
+            if (movementX > _startPos.x + _lengthX)
+                _startPos.x += _lengthX;
+            else if (movementX < _startPos.x - _lengthX)
+                _startPos.x -= _lengthX;
+
+            if (movementY > _startPos.y + _lengthY)
+                _startPos.y += _lengthY;
+            else if (movementY < _startPos.y - _lengthY)
+                _startPos.y -= _lengthY;
         }
     }
 }
