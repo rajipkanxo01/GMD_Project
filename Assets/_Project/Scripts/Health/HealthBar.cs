@@ -14,6 +14,7 @@ namespace _Project.Scripts.Health {
         }
         
         public void SetHealthLevel(int health) {
+            Debug.Log("Setting health level: " + health);
             slider.value = health;
             healthFill.fillAmount = health / 100f;
             healthFill.color = gradient.Evaluate(health / 100f);

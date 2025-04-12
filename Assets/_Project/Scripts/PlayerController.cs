@@ -79,6 +79,7 @@ namespace _Project.Scripts
                 if (_jumpCounter < jumpTime)
                 {
                     _rb.linearVelocity += _vecGravity * (jumpMultiplier * Time.deltaTime);
+                    _animator.SetTrigger("Jump");
                 }
                 else
                 {
@@ -202,6 +203,7 @@ namespace _Project.Scripts
 
         private void ApplyDamage(int amount)
         {
+            Debug.Log("Applying Damage " + amount);
             _currentHealth = Mathf.Clamp(_currentHealth - amount, 0, maxHealth);
             healthBar.SetHealthLevel(_currentHealth);
         }
