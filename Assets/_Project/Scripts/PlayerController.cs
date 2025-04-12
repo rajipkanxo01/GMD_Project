@@ -203,6 +203,7 @@ namespace _Project.Scripts
 
         private void ApplyDamage(int amount)
         {
+            Debug.Log("Applying Damage " + amount);
             _currentHealth = Mathf.Clamp(_currentHealth - amount, 0, maxHealth);
             healthBar.SetHealthLevel(_currentHealth);
         }

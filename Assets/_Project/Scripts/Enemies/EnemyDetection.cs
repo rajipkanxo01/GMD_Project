@@ -10,6 +10,8 @@ namespace _Project.Scripts.Enemies
         [SerializeField] private float colliderDistance = 0.5f;
         [SerializeField] private LayerMask playerLayer;
         
+        public LayerMask PlayerLayer => playerLayer;
+        
         public bool PlayerInRange()
         {
             Vector3 origin = boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance;
@@ -27,6 +29,16 @@ namespace _Project.Scripts.Enemies
             Vector3 origin = boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance;
             Vector3 size = new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z);
             Gizmos.DrawWireCube(origin, size);
+        }
+        
+        public Vector3 GetBoxOrigin()
+        {
+            return boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance;
+        }
+
+        public Vector3 GetBoxSize()
+        {
+            return new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using _Project.Scripts.Health;
 using UnityEngine;
 
 namespace _Project.Scripts.Enemies
@@ -36,10 +37,19 @@ namespace _Project.Scripts.Enemies
 
         public void DamagePlayer()
         {
-            if (_detection.PlayerInRange())
+            Vector3 origin = _detection.GetBoxOrigin();
+            Vector3 size = _detection.GetBoxSize();
+
+            Collider2D hit = Physics2D.OverlapBox(origin, size, 0, _detection.PlayerLayer);
+
+            if (hit != null)
             {
-                Debug.Log("Player damaged: " + damage);
-                // TODO: Apply actual damage to player
+                var healthBar = hit.GetComponent<PlayerController>();
+                if (healthBar != null)
+                {
+                    healthBar.DecreaseHealth(damage);
+                    Debug.Log("Player damaged: " + damage);
+                }
             }
         }
         
