@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace _Project.Scripts.Lift
+namespace _Project.Levels.Level_3.Scripts.Lift
 {
     public class StickToLift : MonoBehaviour
     {
