@@ -10,10 +10,13 @@ namespace _Project.Scripts.Health {
         [SerializeField] private int maxHealth = 100;
         [SerializeField] private float invincibleTime = 2f;
         [SerializeField] private HealthBar healthBar;
+        [SerializeField] private SpriteRenderer spriteRenderer;
+        [SerializeField] private Color normalColor, fadeColor;
         
         private int _currentHealth;
         private bool _isInvincible;
         private float _invincibilityCooldown;
+        private PlayerController _player;
 
         public int CurrentHealth => _currentHealth;
         public int MaxHealth => maxHealth;
@@ -25,6 +28,7 @@ namespace _Project.Scripts.Health {
         void Start() {
             _currentHealth = maxHealth;
             healthBar.SetMaxHealthLevel(maxHealth);
+            _player = GetComponent<PlayerController>();
         }
 
         // Update is called once per frame
@@ -39,6 +43,7 @@ namespace _Project.Scripts.Health {
             _invincibilityCooldown -= Time.deltaTime;
             if (_invincibilityCooldown <= 0)
             {
+                spriteRenderer.color = normalColor;
                 _isInvincible = false;
             }
         }
@@ -49,7 +54,11 @@ namespace _Project.Scripts.Health {
 
             _isInvincible = true;
             _invincibilityCooldown = invincibleTime;
-
+            spriteRenderer.color = fadeColor;
+            
+            //making player jump a little when hurt
+            _player.playerHurt();
+            
             ApplyDamage(amount);
         }
 
