@@ -47,7 +47,7 @@ namespace _Project.Scripts.Enemies
                 var healthBar = hit.GetComponent<PlayerController>();
                 if (healthBar != null)
                 {
-                    healthBar.DecreaseHealth(damage);
+                    // healthBar.DecreaseHealth(damage);
                     Debug.Log("Player damaged: " + damage);
                 }
             }

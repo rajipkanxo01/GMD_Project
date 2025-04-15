@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2014773747
-  m_SortingLayer: 7
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 4688295478533005478, guid: efc8192d3f9ce3041967c322959c4468, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 719516674006978922}
   - component: {fileID: 1781743038494144446}
   - component: {fileID: 1335049586455149821}
+  - component: {fileID: 1467858100384570167}
   m_Layer: 3
   m_Name: Player_New
   m_TagString: Player
@@ -169,7 +170,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2014773747
-  m_SortingLayer: 7
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 4cc87454fc9b2af429b2dbf4c527b066, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -291,7 +292,7 @@ MonoBehaviour:
     m_Bits: 64
   maxHealth: 100
   invincibleTime: 2
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 5674420568703855433, guid: a24e7a6c74637f24e8882c0a665b760c, type: 3}
 --- !u!50 &547584233646732845
 Rigidbody2D:
   serializedVersion: 5
@@ -399,6 +400,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c387651f094337957b33c0d41ee4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1467858100384570167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3777001416335780327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee965414c58219408463cd92e3a74ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  invincibleTime: 2
+  healthBar: {fileID: 0}
 --- !u!1 &5651082073631582528
 GameObject:
   m_ObjectHideFlags: 0
