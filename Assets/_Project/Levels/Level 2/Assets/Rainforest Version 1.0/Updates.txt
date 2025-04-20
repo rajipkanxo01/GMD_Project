@@ -1,0 +1,6 @@
+-- Version 1.0 --
+Tileset Release!
+8 PNG Files
+8 Aseprite Files
+1 ReadMe Text File
+1 Update Text File
