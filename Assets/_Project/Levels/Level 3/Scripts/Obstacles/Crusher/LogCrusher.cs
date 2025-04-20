@@ -16,19 +16,20 @@ namespace _Project.Levels.Level_3.Scripts.Obstacles.Crusher
 
         [SerializeField] private Transform playerTransform;
         [SerializeField] private CinemachineImpulseSource impulseSource;
-        [SerializeField] private float shakeDistance = 2f; 
+        [SerializeField] private float shakeDistance = 2f;
 
         private bool scalingDown = true;
         private BoxCollider2D _collider;
         private Vector2 _originalSize;
         private Vector2 _originalOffset;
+        private bool isShaking = false;
 
         private void Start()
         {
             _collider = movingPart.GetComponent<BoxCollider2D>();
             _originalSize = _collider.size;
             _originalOffset = _collider.offset;
-            
+
             StartCoroutine(CrusherLoop());
         }
 
@@ -42,29 +43,36 @@ namespace _Project.Levels.Level_3.Scripts.Obstacles.Crusher
                 {
                     float newYScale = Mathf.MoveTowards(movingPart.localScale.y, targetY, scaleSpeed * Time.deltaTime);
                     movingPart.localScale = new Vector3(movingPart.localScale.x, newYScale, movingPart.localScale.z);
-                    
-                    if (scalingDown && Mathf.Approximately(targetY, minScaleY))
+
+
+                    /*if (scalingDown && Mathf.Approximately(targetY, minScaleY))
                     {
-                        if (Vector2.Distance(transform.position, playerTransform.position) <= shakeDistance)
+                        float distance = Vector2.Distance(transform.position, playerTransform.position);
+
+                        if (distance <= shakeDistance)
                         {
                             impulseSource?.GenerateImpulse();
                         }
-                    }
-                    
+                        else
+                        {
+                            CinemachineImpulseManager.Instance.Clear();
+                        }
+                    }*/
+
                     // Update collider size & offset based on current Y scale
                     _collider.size = new Vector2(_originalSize.x, _originalSize.y * newYScale);
-                    
+
                     float heightDiff = (_originalSize.y - _originalSize.y * newYScale);
                     float newYOffset = _originalOffset.y + (heightDiff / 2f);
                     _collider.offset = new Vector2(_originalOffset.x, newYOffset);
-                    
+
                     yield return null;
                 }
 
                 movingPart.localScale = new Vector3(movingPart.localScale.x, targetY, movingPart.localScale.z);
                 _collider.size = new Vector2(_originalSize.x, _originalSize.y * targetY);
                 _collider.offset = new Vector2(_originalOffset.x, _originalOffset.y * targetY);
-                
+
 
                 yield return new WaitForSeconds(waitTimeAtEnds);
 
