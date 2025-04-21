@@ -1,15 +1,16 @@
-using System;
 using UnityEngine;
 
-namespace _Project.Levels.Level_3.Scripts.MovingGround
+namespace _Project.Levels.Level_3.Scripts
 {
-    public class TorchPuzzleSign : MonoBehaviour
+    public class PuzzleSign : MonoBehaviour
     {
+        [SerializeField] private string displayText;
+        
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.GetComponent<Collider2D>().CompareTag("Player"))
             {
-                UniversalTooltipUI.Instance.ShowTooltip("Light all torches to activate the platform (Press E to light)", transform.position);   
+                UniversalTooltipUI.Instance.ShowTooltip($"{displayText}", transform.position);   
             }
         }
 
