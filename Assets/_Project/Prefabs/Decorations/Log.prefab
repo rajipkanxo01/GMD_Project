@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6918888006625266437}
   - component: {fileID: 7008691741538311514}
   - component: {fileID: 2073704191088439879}
+  - component: {fileID: 402533625217371017}
   m_Layer: 6
   m_Name: Log
   m_TagString: Untagged
@@ -162,3 +163,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &402533625217371017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8929466748964882353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bbf4468747db7c4a9a70e3ee09a9a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallDelay: 0.5
+  fallSpeed: 1
