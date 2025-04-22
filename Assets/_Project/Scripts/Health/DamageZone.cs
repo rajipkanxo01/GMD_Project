@@ -6,7 +6,6 @@ namespace _Project.Scripts.Health {
             Debug.Log("Obstacle");
             if (collider.CompareTag("Player")) {
                 PlayerHealthController.instance.TakeObstacleDamage(5);
-
                 if (PlayerHealthController.instance.CurrentHealth <= 0) {
                     collider.gameObject.SetActive(false);
                 }
