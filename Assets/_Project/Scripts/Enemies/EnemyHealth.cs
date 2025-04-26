@@ -1,5 +1,4 @@
-﻿using System;
-using _Project.Scripts.Health;
+﻿using _Project.Scripts.Health;
 using UnityEngine;
 
 namespace _Project.Scripts.Enemies
