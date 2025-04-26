@@ -151,8 +151,16 @@ namespace _Project.Scripts
             _animator.SetBool("move", _horizontalInput != 0);
         }
 
-        public void playerHurt() {
+        public void PlayerHurtByObstacle() {
+            Bump();
+            _animator.SetTrigger("isHurt");
+        }
+
+        public void Bump() {
             _rb.linearVelocity = new Vector2(0f, jumpMultiplier * 1f);
+        }
+        
+        public void PlayerHurtByEnemy() {
             _animator.SetTrigger("isHurt");
         }
         #endregion

@@ -57,13 +57,14 @@ namespace _Project.Scripts.Health {
             spriteRenderer.color = fadeColor;
             
             //making player jump a little when hurt
-            _player.playerHurt();
+            _player.PlayerHurtByObstacle();
             
             ApplyDamage(amount);
         }
 
         public void DecreaseHealth(int amount)
         {
+            _player.PlayerHurtByEnemy();
             ApplyDamage(amount);
         }
 
