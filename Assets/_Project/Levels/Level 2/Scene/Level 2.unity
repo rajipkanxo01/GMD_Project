@@ -125868,9 +125868,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371711907251208404, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107648397397079423, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2402981663589076305, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175820320784126685, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175820320784126685, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_MaxValue
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175820320784126685, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Transition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175820320784126685, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3671470003877948423, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3766823971609891185, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
       propertyPath: m_LocalPosition.x
@@ -125900,9 +125928,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4787890604533373451, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5062684773602118191, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
       propertyPath: m_Name
       value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062684773602118191, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5284390901411204740, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
       propertyPath: m_AnchorMax.x
@@ -125963,6 +125999,18 @@ PrefabInstance:
     - target: {fileID: 7328159091277418191, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
       propertyPath: colliderDistance
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491459952472542798, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7667881487985260615, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8014204663342198163, guid: 5649b91455b5f0c4f96587e8a2fe4c91, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

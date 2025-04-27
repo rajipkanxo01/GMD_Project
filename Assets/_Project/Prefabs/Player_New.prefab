@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2014773747
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 4688295478533005478, guid: efc8192d3f9ce3041967c322959c4468, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -126,6 +126,7 @@ Transform:
   m_Children:
   - {fileID: 2389906815513813082}
   - {fileID: 8000996320493202632}
+  - {fileID: 2213327475672545444}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6163968892540617227
@@ -170,7 +171,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2014773747
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 4cc87454fc9b2af429b2dbf4c527b066, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -290,9 +291,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  maxHealth: 100
-  invincibleTime: 2
-  healthBar: {fileID: 5674420568703855433, guid: a24e7a6c74637f24e8882c0a665b760c, type: 3}
 --- !u!50 &547584233646732845
 Rigidbody2D:
   serializedVersion: 5
@@ -400,6 +398,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c387651f094337957b33c0d41ee4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackRange: 0.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  attackPoint: {fileID: 2213327475672545444}
 --- !u!114 &1467858100384570167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,6 +418,40 @@ MonoBehaviour:
   maxHealth: 100
   invincibleTime: 2
   healthBar: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  normalColor: {r: 0, g: 0, b: 0, a: 0}
+  fadeColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!1 &4514498334057250504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2213327475672545444}
+  m_Layer: 3
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2213327475672545444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4514498334057250504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.57, y: 0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6251729479699714506}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5651082073631582528
 GameObject:
   m_ObjectHideFlags: 0

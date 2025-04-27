@@ -1,4 +1,5 @@
 ﻿using System;
+using _Project.Scripts.Enemies;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,10 @@ namespace _Project.Scripts.Player
 
         private static readonly int Attack1 = Animator.StringToHash("attack1");
         private static readonly int RunningAttack = Animator.StringToHash("runAttack");
+        
+        public float attackRange = 0.5f;
+        public LayerMask enemyLayer;
+        public Transform attackPoint;
 
         private void Awake()
         {
@@ -34,5 +39,33 @@ namespace _Project.Scripts.Player
                 }
             }
         }
+        
+        // This function will be called by the Animation Event!
+        public void DamageEnemy()
+        {
+            Debug.Log("First Enemy took damage!........................");
+            
+            // Find all enemies in range
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+
+            foreach (Collider2D enemyCollider in hitEnemies)
+            {
+                Enemy enemy = enemyCollider.GetComponent<Enemy>();
+                if (enemy != null)
+                {
+                    enemy.TakeDamage(10);
+                }
+            }
+        }
+        
+        // To visualize attack hitbox in the editor
+        private void OnDrawGizmosSelected()
+        {
+            if (attackPoint == null) return;
+            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        }
     }
 }
+
+
+

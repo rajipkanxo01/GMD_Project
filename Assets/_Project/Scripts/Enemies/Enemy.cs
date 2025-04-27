@@ -61,5 +61,9 @@ namespace _Project.Scripts.Enemies
             scale.x = target.position.x < transform.position.x ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
             transform.localScale = scale;
         }
+
+        public void TakeDamage(int damage) {
+            EnemyHealth.TakeDamage(damage);
+        }
     }
 }
