@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Ground
   - Hazard
+  - Box
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - UI
   - Ground
   - Enemy
-  - 
-  - 
+  - Pushable Log
+  - Box
   - 
   - 
   - 
@@ -71,8 +72,11 @@ TagManager:
   - name: Background
     uniqueID: 2944900427
     locked: 0
+  - name: Ground
+    uniqueID: 1402163557
+    locked: 0
   - name: UI
-    uniqueID: 1324557027
+    uniqueID: 501506061
     locked: 0
   m_RenderingLayers:
   - Default

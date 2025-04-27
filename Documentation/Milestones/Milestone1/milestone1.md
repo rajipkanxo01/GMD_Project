@@ -3,6 +3,53 @@
 ---
 
 ## Pramesh Shrestha
+### Implementation of Health System
+
+As part of the first development milestone, I created a health system for both the main player and the enemies in the game. This system shows health clearly on the screen and is easy to understand for players. I also made sure the code is organized and easy to update in the future, by keeping different parts of the health system in separate scripts.
+
+**Health Bar UI**
+
+To provide visual feedback on health status, a **canvas-based UI** was used to display health bars:
+
+- **Main Player Health Bar:** The player's health bar is placed in the top-left corner of the screen and stays there throughout the game. This makes it easy for players to always keep an eye on their health while playing.
+  
+- **Enemy Health Bars:** For enemies, health bars were implemented as HUDs that appear above their heads. These bars update as they take damage and use the same style as the player’s bar, so everything looks consistent and easy to understand.
+```csharp
+    private void HandleInvincibility()
+        {
+            if (!_isInvincible) return;
+
+            _invincibilityCooldown -= Time.deltaTime;
+            if (_invincibilityCooldown <= 0)
+            {
+                spriteRenderer.color = normalColor;
+                _isInvincible = false;
+            }
+        }
+```
+
+The health bar uses gradient colors to give players a quick visual cue about their health — shifting shades help them instantly see how much health they have left.
+
+
+**Health Logic & Interactions**
+- **Damage Handling**: The player’s health decreases upon colliding with hazardous objects or when attacked by enemies. This mechanic adds risk to exploration and combat, encouraging more strategic gameplay.
+  
+- **Health Recovery:** Players can regain health by collecting health collectibles, which are represented as logs — aligning with the game’s theme of a lumberjack warrior. The system ensures that health is only restored if the player's current health is below the maximum, avoiding over-healing.
+- **Damage Zone Behavior**: When the player remains within a hazardous zone, health gradually decreases over time. To prevent the health from depleting too rapidly, an **invincibility window** is introduced after each hit. This implementation was inspired by best practices observed in a YouTube tutorial and adds fairness to gameplay while still maintaining challenge.
+
+
+
+**Code Structure & Principles**
+To follow software development best practices:
+
+- A **modular structure** was adopted by separating concerns into individual scripts:
+  - The **Health Bar** UI script
+  - The **Player Health** logic script
+  - A script for **Damage Zones**
+  - A script for **Health Collectibles**
+- This separation supports the **Single Responsibility Principle (SRP)** from the SOLID principles, ensuring each script handles only one aspect of the system. Notably, the player controller remains focused on player-specific behavior without being overloaded with health logic.
+  
+- To manage the player's health consistently throughout the game, I used the **Singleton** design pattern for the PlayerHealthController class. Since there is only one player in the game, this pattern makes it easy to access the health system from any other script without having to manually pass references. This approach keeps the code organized and avoids repetitive lookups. However, I’m also aware of the limitations of singletons, such as potential issues with testing or scalability. For the current scope of the game - with one player and three levels, using a singleton is a simple and effective solution.
 
 ---
 
