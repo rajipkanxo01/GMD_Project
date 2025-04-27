@@ -1,4 +1,5 @@
 ﻿using _Project.Scripts;
+using _Project.Scripts.Health;
 using UnityEngine;
 
 namespace _Project.Levels.Level_3.Scripts.Obstacles.Crusher
@@ -15,8 +16,8 @@ namespace _Project.Levels.Level_3.Scripts.Obstacles.Crusher
             {
                 Debug.Log("Player hit by crusher!!");
 
-                var playerController = other.collider.GetComponent<PlayerController>();
-                playerController.DecreaseHealth(damage);
+                var playerHealthController = other.collider.GetComponent<PlayerHealthController>();
+                playerHealthController.DecreaseHealth(damage);
             }
         }
     }

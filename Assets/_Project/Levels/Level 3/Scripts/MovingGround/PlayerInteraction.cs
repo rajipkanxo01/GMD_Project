@@ -11,6 +11,7 @@ namespace _Project.Levels.Level_3.Scripts.MovingGround
         {
             if (context.performed && _currentTorch != null)
             {
+                Debug.Log("Interacting with torch");
                 _currentTorch.ActivateTorch();
             }
         }
