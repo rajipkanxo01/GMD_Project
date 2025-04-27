@@ -49003,7 +49003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolPoints:
   - {fileID: 380537933}
-  - {fileID: 0}
+  - {fileID: 1014064660}
   patrolSpeed: 2
   pointReachedThreshold: 0.1
   waitTimeAtPoint: 1
