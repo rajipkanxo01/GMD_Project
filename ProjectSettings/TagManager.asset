@@ -71,5 +71,8 @@ TagManager:
   - name: Background
     uniqueID: 2944900427
     locked: 0
+  - name: UI
+    uniqueID: 1324557027
+    locked: 0
   m_RenderingLayers:
   - Default

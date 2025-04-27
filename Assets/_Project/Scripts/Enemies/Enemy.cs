@@ -26,6 +26,7 @@ namespace _Project.Scripts.Enemies
         public float PointReachedThreshold => pointReachedThreshold;
         public float WaitTimeAtPoint => waitTimeAtPoint;
         public Transform CurrentPatrolPoint => patrolPoints[_currentPatrolIndex];
+        
 
         private int _currentPatrolIndex;
 
