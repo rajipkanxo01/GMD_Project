@@ -44,10 +44,10 @@ namespace _Project.Scripts.Enemies
 
             if (hit != null)
             {
-                var healthBar = hit.GetComponent<PlayerController>();
-                if (healthBar != null)
+                var healthController = hit.GetComponent<PlayerHealthController>();
+                if (healthController != null)
                 {
-                    // healthBar.DecreaseHealth(damage);
+                    healthController.DecreaseHealth(damage);
                     Debug.Log("Player damaged: " + damage);
                 }
             }
