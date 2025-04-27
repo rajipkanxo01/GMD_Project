@@ -1,4 +1,5 @@
 using _Project.Scripts.Health;
+using _Project.Scripts.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -38,17 +39,8 @@ namespace _Project.Scripts
         private float _jumpCounter;
         private Vector2 _vecGravity;
         #endregion
-
-        #region Health
-        [Header("Health Settings")]
-        [SerializeField] private int maxHealth = 100;
-        [SerializeField] private float invincibleTime = 2f;
-        [SerializeField] private HealthBar healthBar;
-        private int _currentHealth;
-        private bool _isInvincible;
-        private float _invincibilityCooldown;
-
-        #endregion
+        
+        public bool _isDead;
 
         #region Unity Methods
 
@@ -61,14 +53,11 @@ namespace _Project.Scripts
 
         private void Start()
         {
-            _currentHealth = maxHealth;
             _vecGravity = new Vector2(0, -Physics2D.gravity.y);
-            healthBar.SetMaxHealthLevel(maxHealth);
         }
 
         private void Update()
         {
-            HandleInvincibility();
             ApplyFallMultiplier();
 
             // Handle held jump (variable jump height)
@@ -165,56 +154,24 @@ namespace _Project.Scripts
             _animator.SetBool("move", _horizontalInput != 0);
         }
 
+        public void PlayerHurtByObstacle() {
+            Bump();
+            _animator.SetTrigger("isHurt");
+        }
+
+        public void Bump() {
+            _rb.linearVelocity = new Vector2(0f, jumpMultiplier * 1f);
+        }
+        
+        public void PlayerHurtByEnemy() {
+            _animator.SetTrigger("isHurt");
+        }
+
+        public void PlayerDie() {
+            _animator.SetBool("isDead", _isDead);
+            UIController.instance.DisplayGameOverScreen(2f);
+        }
         #endregion
-
-        #region Invincibility and Health
-
-        private void HandleInvincibility()
-        {
-            if (!_isInvincible) return;
-
-            _invincibilityCooldown -= Time.deltaTime;
-            if (_invincibilityCooldown <= 0)
-            {
-                _isInvincible = false;
-            }
-        }
-
-        public void TakeObstacleDamage(int amount)
-        {
-            if (_isInvincible) return;
-
-            _isInvincible = true;
-            _invincibilityCooldown = invincibleTime;
-
-            ApplyDamage(amount);
-        }
-
-        public void DecreaseHealth(int amount)
-        {
-            ApplyDamage(amount);
-        }
-
-        public void AddPlayerHealth(int amount)
-        {
-            _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, maxHealth);
-            healthBar.SetHealthLevel(_currentHealth);
-        }
-
-        private void ApplyDamage(int amount)
-        {
-            Debug.Log("Applying Damage " + amount);
-            _currentHealth = Mathf.Clamp(_currentHealth - amount, 0, maxHealth);
-            healthBar.SetHealthLevel(_currentHealth);
-        }
-
-        #endregion
-
-        #region Properties
-
-        public int CurrentHealth => _currentHealth;
-        public int MaxHealth => maxHealth;
-
-        #endregion
+        
     }
 }

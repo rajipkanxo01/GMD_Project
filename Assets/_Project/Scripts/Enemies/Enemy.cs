@@ -26,6 +26,7 @@ namespace _Project.Scripts.Enemies
         public float PointReachedThreshold => pointReachedThreshold;
         public float WaitTimeAtPoint => waitTimeAtPoint;
         public Transform CurrentPatrolPoint => patrolPoints[_currentPatrolIndex];
+        
 
         private int _currentPatrolIndex;
 
@@ -60,6 +61,10 @@ namespace _Project.Scripts.Enemies
             Vector3 scale = transform.localScale;
             scale.x = target.position.x < transform.position.x ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
             transform.localScale = scale;
+        }
+
+        public void TakeDamage(int damage) {
+            EnemyHealth.DecreaseEnemyHealth(damage);
         }
     }
 }

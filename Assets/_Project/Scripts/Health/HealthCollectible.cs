@@ -3,11 +3,13 @@ using UnityEngine;
 
 namespace _Project.Scripts.Health {
     public class HealthCollectible : MonoBehaviour {
+
+        public GameObject collectibleEffect;
         private void OnTriggerEnter2D(Collider2D collider) {
-            PlayerController controller = collider.gameObject.GetComponent<PlayerController>();
-            if (controller != null && controller.CurrentHealth < controller.MaxHealth) {
-                controller.AddPlayerHealth(10);
+            if (collider.CompareTag("Player")) {
+                PlayerHealthController.instance.AddPlayerHealth(10);
                 Destroy(gameObject);
+                Instantiate(collectibleEffect, transform.position, transform.rotation);
             }
         }
     }

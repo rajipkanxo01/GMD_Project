@@ -1,5 +1,4 @@
-﻿using System;
-using _Project.Scripts.Health;
+﻿using _Project.Scripts.Health;
 using UnityEngine;
 
 namespace _Project.Scripts.Enemies
@@ -17,7 +16,7 @@ namespace _Project.Scripts.Enemies
             healthBar.SetHealthLevel(_currentHealth);
         }
         
-        public void TakeDamage(int damage)
+        public void DecreaseEnemyHealth(int damage)
         {
             _currentHealth -= damage;
             healthBar.SetHealthLevel(_currentHealth);

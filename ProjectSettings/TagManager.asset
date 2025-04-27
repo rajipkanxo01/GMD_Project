@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Ground
+  - Hazard
   - Box
   layers:
   - Default
@@ -59,14 +60,17 @@ TagManager:
   - name: BGLayer1
     uniqueID: 3954657247
     locked: 0
-  - name: Background
-    uniqueID: 2944900427
+  - name: Checkpoint
+    uniqueID: 403000091
     locked: 0
   - name: Player
     uniqueID: 2014773747
     locked: 0
   - name: Foreground
     uniqueID: 3014446823
+    locked: 0
+  - name: Background
+    uniqueID: 2944900427
     locked: 0
   - name: Ground
     uniqueID: 1402163557
