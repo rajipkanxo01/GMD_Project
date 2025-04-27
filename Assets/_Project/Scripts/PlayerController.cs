@@ -1,4 +1,5 @@
 using _Project.Scripts.Health;
+using _Project.Scripts.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -38,6 +39,8 @@ namespace _Project.Scripts
         private float _jumpCounter;
         private Vector2 _vecGravity;
         #endregion
+        
+        public bool _isDead;
 
         #region Unity Methods
 
@@ -162,6 +165,11 @@ namespace _Project.Scripts
         
         public void PlayerHurtByEnemy() {
             _animator.SetTrigger("isHurt");
+        }
+
+        public void PlayerDie() {
+            _animator.SetBool("isDead", _isDead);
+            UIController.instance.DisplayGameOverScreen(2f);
         }
         #endregion
         

@@ -406,7 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 6441580443209872902}
   range: 1
-  colliderDistance: 0.4
+  colliderDistance: 0.3
   playerLayer:
     serializedVersion: 2
     m_Bits: 8

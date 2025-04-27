@@ -16,7 +16,7 @@ namespace _Project.Scripts.Enemies
             healthBar.SetHealthLevel(_currentHealth);
         }
         
-        public void TakeDamage(int damage)
+        public void DecreaseEnemyHealth(int damage)
         {
             _currentHealth -= damage;
             healthBar.SetHealthLevel(_currentHealth);

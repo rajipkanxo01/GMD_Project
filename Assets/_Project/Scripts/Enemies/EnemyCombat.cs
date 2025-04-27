@@ -29,7 +29,6 @@ namespace _Project.Scripts.Enemies
         public void TryAttack()
         {
             if (!IsCooldownComplete()) return;
-
             _animator.SetTrigger(Attack1);
             ResetCooldown();
         }

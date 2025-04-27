@@ -64,7 +64,7 @@ namespace _Project.Scripts.Enemies
         }
 
         public void TakeDamage(int damage) {
-            EnemyHealth.TakeDamage(damage);
+            EnemyHealth.DecreaseEnemyHealth(damage);
         }
     }
 }
