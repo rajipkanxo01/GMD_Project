@@ -16,12 +16,6 @@ namespace _Project.Scripts.UI {
         void Start() {
             gameOverScreen.SetActive(false);    
         }
-        
-        void Update() {
-            // if (Input.GetKeyDown(KeyCode.Escape)) {
-            //     PauseGame();
-            // }
-        }
 
         public void DisplayGameOverScreen(float delaySeconds) {
             StartCoroutine(ShowGameOverScreenAfterDelay(delaySeconds));

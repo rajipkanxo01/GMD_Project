@@ -39,8 +39,6 @@ namespace _Project.Scripts
         private float _jumpCounter;
         private Vector2 _vecGravity;
         #endregion
-        
-        public bool _isDead;
 
         #region Unity Methods
 
@@ -168,9 +166,14 @@ namespace _Project.Scripts
         }
 
         public void PlayerDie() {
-            _animator.SetBool("isDead", _isDead);
-            UIController.instance.DisplayGameOverScreen(2f);
+            _animator.SetTrigger("dead");
+            UIController.instance.DisplayGameOverScreen(1f);
         }
+
+        public void DestroyObject() {
+            Destroy(gameObject);
+        }
+        
         #endregion
         
     }
