@@ -80,7 +80,6 @@ namespace _Project.Scripts.Health {
             _currentHealth = Mathf.Clamp(_currentHealth - amount, 0, maxHealth);
             healthBar.SetHealthLevel(_currentHealth);
             if (_currentHealth <= 0) {
-                _player._isDead = true;
                 _player.PlayerDie();
             }
         }
