@@ -256,6 +256,17 @@
                     "action": "PauseScreen",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "48ff3d43-72a1-4f3f-b4a1-12d0a7be6756",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PauseScreen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

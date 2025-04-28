@@ -16533,6 +16533,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: ef022356-268b-4218-9804-0d44d20b6086
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: 25cf573a-a1c1-499e-98ab-ff4fdefa1736
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: 'Player/Interact[/Keyboard/e]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: 'Player/PauseScreen[/Keyboard/escape]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1894480893}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: _Project.Scripts.UI.UIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369704860953374198, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
