@@ -28,7 +28,7 @@ namespace _Project.Levels.Level_3.Scripts
 
             // Move the tooltip above the world object
             Vector2 screenPos = mainCamera.WorldToScreenPoint(worldPosition);
-            tooltipTransform.position = screenPos + new Vector2(0, 450f);
+            tooltipTransform.position = screenPos + new Vector2(0, 300f);
 
             // Reset alpha and scale
             canvasGroup.alpha = 0f;
