@@ -135632,6 +135632,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2005074202}
     m_Modifications:
+    - target: {fileID: 686233372729890442, guid: ab2ef109a478da943beab9aaae7bda55, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 501506061
+      objectReference: {fileID: 0}
     - target: {fileID: 1997245542505383035, guid: ab2ef109a478da943beab9aaae7bda55, type: 3}
       propertyPath: m_Name
       value: Goblin
