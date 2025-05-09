@@ -6,7 +6,7 @@ namespace _Project.Scripts.Enemies
 {
     public class EnemyCombat : MonoBehaviour
     {
-        [SerializeField] private int damage = 10;
+        [SerializeField] private int damage = 5;
         [SerializeField] private float attackCooldown = 2f;
 
         private float _cooldownTimer = Mathf.Infinity;

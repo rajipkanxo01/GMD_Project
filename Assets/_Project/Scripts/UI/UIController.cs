@@ -28,6 +28,7 @@ namespace _Project.Scripts.UI {
         public void RestartGame() {
             Debug.Log("Restarting game");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Time.timeScale = 1;
         }
 
         public void QuitGame() {
@@ -38,11 +39,19 @@ namespace _Project.Scripts.UI {
         public void MainMenu() {
             Debug.Log("MainMenu");
             SceneManager.LoadSceneAsync("MainMenu");
+            Time.timeScale = 1;
         }
         
         public void PauseGame() {
             Debug.Log("PauseGame");
             gamePauseScreen.SetActive(!gamePauseScreen.activeSelf);
+            Time.timeScale = gamePauseScreen.activeSelf ? 0 : 1;
+        }
+
+        public void ResumeGame() {
+            Debug.Log("ResumeGame");
+            gamePauseScreen.SetActive(!gamePauseScreen.activeSelf);
+            Time.timeScale = 1;
         }
     }
 }

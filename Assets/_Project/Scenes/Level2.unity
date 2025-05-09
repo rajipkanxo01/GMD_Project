@@ -365,7 +365,7 @@ Transform:
   m_GameObject: {fileID: 51518876}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.92, y: 3.06, z: -10}
+  m_LocalPosition: {x: -31.3, y: -3.1799998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4125,10 +4125,22 @@ PrefabInstance:
     - target: {fileID: 3716728397134805088, guid: d2ad4aaf782efb749b1b540fc9d14d5f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1894480888}
+      objectReference: {fileID: 1894480893}
     - target: {fileID: 3716728397134805088, guid: d2ad4aaf782efb749b1b540fc9d14d5f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716728397134805088, guid: d2ad4aaf782efb749b1b540fc9d14d5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716728397134805088, guid: d2ad4aaf782efb749b1b540fc9d14d5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: _Project.Scripts.UI.UIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716728397134805088, guid: d2ad4aaf782efb749b1b540fc9d14d5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6618197362988886600, guid: d2ad4aaf782efb749b1b540fc9d14d5f, type: 3}
       propertyPath: m_text
@@ -6604,7 +6616,7 @@ Transform:
   m_GameObject: {fileID: 1250642482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.92, y: 3.06, z: -10}
+  m_LocalPosition: {x: -31.3, y: -3.1799998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6672,11 +6684,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6251729479699714506, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43.92
+      value: -36.3
       objectReference: {fileID: 0}
     - target: {fileID: 6251729479699714506, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.06
+      value: -4.18
       objectReference: {fileID: 0}
     - target: {fileID: 6251729479699714506, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
       propertyPath: m_LocalPosition.z
