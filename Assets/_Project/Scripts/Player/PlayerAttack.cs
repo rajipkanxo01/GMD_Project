@@ -39,25 +39,29 @@ namespace _Project.Scripts.Player
                 }
             }
         }
-        
+
         // This function will be called by the Animation Event!
         public void DamageEnemy()
         {
-            Debug.Log("First Enemy took damage!........................");
-            
-            // Find all enemies in range
+            Debug.Log("Attempting to damage enemy...");
+
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
             foreach (Collider2D enemyCollider in hitEnemies)
             {
-                Enemy enemy = enemyCollider.GetComponent<Enemy>();
-                if (enemy != null)
+                if (enemyCollider.TryGetComponent(out Enemy enemy))
                 {
                     enemy.TakeDamage(10);
+                    Debug.Log($"Damaged Enemy: {enemy.name}");
+                }
+                else if (enemyCollider.TryGetComponent(out BossController boss))
+                {
+                    boss.TakeDamage(10);
+                    Debug.Log($"Damaged Boss: {boss.name}");
                 }
             }
         }
-        
+
         // To visualize attack hitbox in the editor
         private void OnDrawGizmosSelected()
         {
