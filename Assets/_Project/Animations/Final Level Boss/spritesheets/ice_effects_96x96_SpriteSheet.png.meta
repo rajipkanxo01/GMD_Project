@@ -406,6 +406,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2622,7 +2648,107 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ice_effects_96x96_SpriteSheet_0: -5616873960237252445
+      ice_effects_96x96_SpriteSheet_1: -8803744366485424464
+      ice_effects_96x96_SpriteSheet_10: 2314856470667503307
+      ice_effects_96x96_SpriteSheet_11: 9174843086342855246
+      ice_effects_96x96_SpriteSheet_12: 3247299135215914484
+      ice_effects_96x96_SpriteSheet_13: -2642763678900282775
+      ice_effects_96x96_SpriteSheet_14: 1717781591685635852
+      ice_effects_96x96_SpriteSheet_15: -5318651894109449073
+      ice_effects_96x96_SpriteSheet_16: 4122203447969299661
+      ice_effects_96x96_SpriteSheet_17: -4815345741413879268
+      ice_effects_96x96_SpriteSheet_18: 3368796442345065939
+      ice_effects_96x96_SpriteSheet_19: 6277853265355088935
+      ice_effects_96x96_SpriteSheet_2: 2643369253037324438
+      ice_effects_96x96_SpriteSheet_20: -1644305471817391286
+      ice_effects_96x96_SpriteSheet_21: 2185003665961804583
+      ice_effects_96x96_SpriteSheet_22: 7939442483768124545
+      ice_effects_96x96_SpriteSheet_23: 7111372601585990145
+      ice_effects_96x96_SpriteSheet_24: -4983503959465758225
+      ice_effects_96x96_SpriteSheet_25: -7301153427590510689
+      ice_effects_96x96_SpriteSheet_26: -5888554433303201101
+      ice_effects_96x96_SpriteSheet_27: -7669389757113401502
+      ice_effects_96x96_SpriteSheet_28: -8664863791060391646
+      ice_effects_96x96_SpriteSheet_29: -7728048351855964088
+      ice_effects_96x96_SpriteSheet_3: -2416158831839500775
+      ice_effects_96x96_SpriteSheet_30: -2224189427030212254
+      ice_effects_96x96_SpriteSheet_31: -1429193751079077232
+      ice_effects_96x96_SpriteSheet_32: -2975009733147194387
+      ice_effects_96x96_SpriteSheet_33: 5718111592740388959
+      ice_effects_96x96_SpriteSheet_34: -2592655528141840560
+      ice_effects_96x96_SpriteSheet_35: -5292165375573405839
+      ice_effects_96x96_SpriteSheet_36: 8151404769374000886
+      ice_effects_96x96_SpriteSheet_37: 6505065748714498172
+      ice_effects_96x96_SpriteSheet_38: -4421439379591592710
+      ice_effects_96x96_SpriteSheet_39: 7957810707948656236
+      ice_effects_96x96_SpriteSheet_4: -7727448877319050325
+      ice_effects_96x96_SpriteSheet_40: 351345527551966020
+      ice_effects_96x96_SpriteSheet_41: 4591310093511806509
+      ice_effects_96x96_SpriteSheet_42: 5804703632632726450
+      ice_effects_96x96_SpriteSheet_43: 1484566321145076183
+      ice_effects_96x96_SpriteSheet_44: -5511553731620482590
+      ice_effects_96x96_SpriteSheet_45: -1409549461187548979
+      ice_effects_96x96_SpriteSheet_46: -2695051051194171309
+      ice_effects_96x96_SpriteSheet_47: 8995981030177816877
+      ice_effects_96x96_SpriteSheet_48: 7813741177117020169
+      ice_effects_96x96_SpriteSheet_49: 6950509360864567352
+      ice_effects_96x96_SpriteSheet_5: -1714287323341012827
+      ice_effects_96x96_SpriteSheet_50: 2198719642641367878
+      ice_effects_96x96_SpriteSheet_51: -548902495232837383
+      ice_effects_96x96_SpriteSheet_52: 3799873046766581358
+      ice_effects_96x96_SpriteSheet_53: -3056187023461677181
+      ice_effects_96x96_SpriteSheet_54: 5403079463239192624
+      ice_effects_96x96_SpriteSheet_55: -1978364659103141181
+      ice_effects_96x96_SpriteSheet_56: -8420621134340194837
+      ice_effects_96x96_SpriteSheet_57: -1907919872824303187
+      ice_effects_96x96_SpriteSheet_58: -1866098362022578312
+      ice_effects_96x96_SpriteSheet_59: 7331695345245585959
+      ice_effects_96x96_SpriteSheet_6: 7091420730562813323
+      ice_effects_96x96_SpriteSheet_60: 5056570020815658994
+      ice_effects_96x96_SpriteSheet_61: -768385438011184572
+      ice_effects_96x96_SpriteSheet_62: -2856344041651968706
+      ice_effects_96x96_SpriteSheet_63: -7465498253786066103
+      ice_effects_96x96_SpriteSheet_64: -8921040879779806108
+      ice_effects_96x96_SpriteSheet_65: 716064191375578036
+      ice_effects_96x96_SpriteSheet_66: 227442661540455065
+      ice_effects_96x96_SpriteSheet_67: -8215554680298690845
+      ice_effects_96x96_SpriteSheet_68: 846576747433790461
+      ice_effects_96x96_SpriteSheet_69: -1792513214827821043
+      ice_effects_96x96_SpriteSheet_7: -8492039595010595727
+      ice_effects_96x96_SpriteSheet_70: 1361974968485484641
+      ice_effects_96x96_SpriteSheet_71: -8327646612592930253
+      ice_effects_96x96_SpriteSheet_72: -7577231925358629450
+      ice_effects_96x96_SpriteSheet_73: 6725051582392045388
+      ice_effects_96x96_SpriteSheet_74: -747738331131899189
+      ice_effects_96x96_SpriteSheet_75: -11465477365243897
+      ice_effects_96x96_SpriteSheet_76: 9147038017994472055
+      ice_effects_96x96_SpriteSheet_77: -8043002790143190809
+      ice_effects_96x96_SpriteSheet_78: -844337116136233212
+      ice_effects_96x96_SpriteSheet_79: 5363440513366951966
+      ice_effects_96x96_SpriteSheet_8: 3516406521917222647
+      ice_effects_96x96_SpriteSheet_80: 7573327001836930420
+      ice_effects_96x96_SpriteSheet_81: 5968839064026043942
+      ice_effects_96x96_SpriteSheet_82: -8609609756909410798
+      ice_effects_96x96_SpriteSheet_83: -6509929183849849782
+      ice_effects_96x96_SpriteSheet_84: -7441143805295849714
+      ice_effects_96x96_SpriteSheet_85: -5938068691943120507
+      ice_effects_96x96_SpriteSheet_86: 8515933224586565303
+      ice_effects_96x96_SpriteSheet_87: 556498627828816652
+      ice_effects_96x96_SpriteSheet_88: -2779029298389486187
+      ice_effects_96x96_SpriteSheet_89: -3973035359834625279
+      ice_effects_96x96_SpriteSheet_9: -9180552275507429489
+      ice_effects_96x96_SpriteSheet_90: 7468743848364351553
+      ice_effects_96x96_SpriteSheet_91: 6389115026584856661
+      ice_effects_96x96_SpriteSheet_92: 7435518319187391357
+      ice_effects_96x96_SpriteSheet_93: -2412659294153705788
+      ice_effects_96x96_SpriteSheet_94: 7964548167108740418
+      ice_effects_96x96_SpriteSheet_95: -4561209263448250267
+      ice_effects_96x96_SpriteSheet_96: 669063366367306677
+      ice_effects_96x96_SpriteSheet_97: -4968197139608948931
+      ice_effects_96x96_SpriteSheet_98: 477723310256489515
+      ice_effects_96x96_SpriteSheet_99: -8014713939983679913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

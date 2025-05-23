@@ -2,6 +2,7 @@
 using _Project.Scripts.Enemies;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace _Project.Scripts.Player
 {
@@ -13,9 +14,13 @@ namespace _Project.Scripts.Player
         private static readonly int RunningAttack = Animator.StringToHash("runAttack");
         
         public float attackRange = 0.5f;
+        
         public LayerMask enemyLayer;
         public Transform attackPoint;
 
+        [SerializeField] 
+        private int attackDamage = 10;
+        
         private void Awake()
         {
             _animator = GetComponent<Animator>();
@@ -51,12 +56,12 @@ namespace _Project.Scripts.Player
             {
                 if (enemyCollider.TryGetComponent(out Enemy enemy))
                 {
-                    enemy.TakeDamage(10);
+                    enemy.TakeDamage(attackDamage);
                     Debug.Log($"Damaged Enemy: {enemy.name}");
                 }
                 else if (enemyCollider.TryGetComponent(out BossController boss))
                 {
-                    boss.TakeDamage(10);
+                    boss.TakeDamage(attackDamage);
                     Debug.Log($"Damaged Boss: {boss.name}");
                 }
             }
