@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4475666167889096703}
   - component: {fileID: 8401279280975406696}
   - component: {fileID: 6427460736732323122}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Health Collectible Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4856,8 +4856,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 501506061
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0

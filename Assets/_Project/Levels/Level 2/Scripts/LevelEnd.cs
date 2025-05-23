@@ -21,7 +21,6 @@ namespace _Project.Levels.Level_2.Scripts
         public void LoadNextLevel()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            SceneManager.LoadScene("Level3");
         }
     }
 }

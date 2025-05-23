@@ -184,6 +184,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -772,7 +798,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      3_atk_11_0: -6516694022458209610
+      3_atk_11_1: 8488609708532622811
+      3_atk_11_10: -705702230008369452
+      3_atk_11_11: -2252658986757111698
+      3_atk_11_12: 2123483511586313230
+      3_atk_11_13: 7414234963722093324
+      3_atk_11_14: 1836900232026099059
+      3_atk_11_15: 6208151129238810018
+      3_atk_11_16: -560838361239089229
+      3_atk_11_17: -2546461791526412109
+      3_atk_11_18: -9178809723164765492
+      3_atk_11_19: -454499352990117339
+      3_atk_11_2: -217017421192291179
+      3_atk_11_20: -4800828421699757315
+      3_atk_11_21: 7211542104632837079
+      3_atk_11_22: -5183836406961307739
+      3_atk_11_23: 2510740588606816758
+      3_atk_11_24: 3695131169361707665
+      3_atk_11_25: -7993428321128030851
+      3_atk_11_3: 7421901351160088118
+      3_atk_11_4: 4108298200390258935
+      3_atk_11_5: 5666268725898124296
+      3_atk_11_6: -5961789516098356802
+      3_atk_11_7: -6152137700521427949
+      3_atk_11_8: -4919786288037262562
+      3_atk_11_9: 4151854967603821520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
