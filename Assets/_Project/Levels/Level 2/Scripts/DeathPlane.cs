@@ -8,7 +8,7 @@ namespace _Project.Levels.Level_2.Scripts {
       if (other.CompareTag("Player")) {
         Debug.Log("Player death");
         if (UIController.instance != null) {
-          UIController.instance.DisplayGameOverScreen(0.3f);
+          UIController.instance.DisplayGameOverScreen(0.1f);
         }
         
       }
