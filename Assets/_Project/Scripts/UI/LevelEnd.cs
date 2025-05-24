@@ -1,3 +1,4 @@
+using _Project.Scripts.Audio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,7 +13,7 @@ namespace _Project.Scripts.UI
         {
             if (other.CompareTag("Player") && isFlagActive == false)
             {
-                Debug.Log(other.name);
+                AudioManager.Instance.PlayLevelCompleteAudio();
                 animator.SetBool("isFlagActive", true);
                 isFlagActive = true;
             }

@@ -1,4 +1,5 @@
 ﻿using System;
+using _Project.Scripts.Audio;
 using _Project.Scripts.Enemies;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,21 +9,21 @@ namespace _Project.Scripts.Player
 {
     public class PlayerAttack : MonoBehaviour
     {
-        private Animator _animator;
-
-        private static readonly int Attack1 = Animator.StringToHash("attack1");
-        private static readonly int RunningAttack = Animator.StringToHash("runAttack");
-        
         public float attackRange = 0.5f;
-        
+
         public LayerMask enemyLayer;
         public Transform attackPoint;
 
-        [SerializeField] 
-        private int attackDamage = 10;
-        
+        [SerializeField] private int attackDamage = 10;
+
+        private Animator _animator;
+        private PlayerAudioController _playerAudioController;
+        private static readonly int Attack1 = Animator.StringToHash("attack1");
+        private static readonly int RunningAttack = Animator.StringToHash("runAttack");
+
         private void Awake()
         {
+            _playerAudioController = GetComponent<PlayerAudioController>();
             _animator = GetComponent<Animator>();
         }
 
@@ -31,6 +32,7 @@ namespace _Project.Scripts.Player
             if (context.performed)
             {
                 var stateInfo = _animator.GetCurrentAnimatorStateInfo(0);
+                _playerAudioController.PlayAttackSound();
 
                 if (stateInfo.IsName("Running") || _animator.GetBool("move"))
                 {
@@ -75,6 +77,3 @@ namespace _Project.Scripts.Player
         }
     }
 }
-
-
-

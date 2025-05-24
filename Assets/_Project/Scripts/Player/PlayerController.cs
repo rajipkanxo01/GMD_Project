@@ -1,3 +1,4 @@
+using _Project.Scripts.Audio;
 using _Project.Scripts.Health;
 using _Project.Scripts.UI;
 using UnityEngine;
@@ -7,6 +8,7 @@ namespace _Project.Scripts
 {
     public class PlayerController : MonoBehaviour
     {
+        
         #region Components
 
         private Rigidbody2D _rb;
@@ -42,10 +44,13 @@ namespace _Project.Scripts
 
         #region Unity Methods
 
+        private PlayerAudioController _playerAudioController;
+
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
             _animator = GetComponent<Animator>();
+            _playerAudioController = GetComponent<PlayerAudioController>();
             _gravityMultiplier = new Vector2(0, -Physics2D.gravity.y);
         }
 
@@ -99,6 +104,7 @@ namespace _Project.Scripts
 
                 _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, 0f);
                 _rb.AddForce(Vector2.up * jumpingPower, ForceMode2D.Impulse);
+                _playerAudioController.PlayJumpSound();
                 _animator.SetTrigger("Jump");
             }
 
@@ -154,6 +160,7 @@ namespace _Project.Scripts
 
         public void PlayerHurtByObstacle() {
             Bump();
+            _playerAudioController.PlayHurtSound();
             _animator.SetTrigger("isHurt");
         }
 
@@ -162,10 +169,12 @@ namespace _Project.Scripts
         }
         
         public void PlayerHurtByEnemy() {
+            _playerAudioController.PlayHurtSound();
             _animator.SetTrigger("isHurt");
         }
 
         public void PlayerDie() {
+            _playerAudioController.PlayHurtSound();
             _animator.SetTrigger("dead");
             UIController.instance.DisplayGameOverScreen(1f);
         }

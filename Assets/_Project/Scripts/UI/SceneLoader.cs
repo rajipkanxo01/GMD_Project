@@ -1,4 +1,5 @@
 using System.Collections;
+using _Project.Scripts.Audio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -42,7 +43,28 @@ namespace _Project.Scripts.UI
                 yield return null;
             }
             
+            PlayLevelMusic(sceneId);
             loadingScreen.SetActive(false);
         }
+        
+        private void PlayLevelMusic(int sceneId)
+        {
+            switch (sceneId)
+            {
+                case 1:
+                    AudioManager.Instance.PlayLevelAudio(LevelType.Level1);
+                    break;
+                case 2:
+                    AudioManager.Instance.PlayLevelAudio(LevelType.Level2);
+                    break;
+                case 3:
+                    AudioManager.Instance.PlayLevelAudio(LevelType.Boss);
+                    break;
+                default:
+                    Debug.LogWarning("No music assigned for this scene.");
+                    break;
+            }
+        }
+
     }
 }
