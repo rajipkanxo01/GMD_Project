@@ -52,7 +52,11 @@ namespace _Project.Scripts.Audio {
             StopOtherAudio();
             mainMenuAudio.Play();
         }
-        
+
+        public void StopMenuAudio()
+        {
+            mainMenuAudio.Stop();
+        }
 
         public void PlayEnemyHurtAudio() {
             enemyHurtAudio.Play();
