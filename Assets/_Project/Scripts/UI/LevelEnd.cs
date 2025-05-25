@@ -1,7 +1,8 @@
+using _Project.Scripts.Audio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace _Project.Levels.Level_2.Scripts
+namespace _Project.Scripts.UI
 {
     public class LevelEnd : MonoBehaviour
     {
@@ -12,7 +13,7 @@ namespace _Project.Levels.Level_2.Scripts
         {
             if (other.CompareTag("Player") && isFlagActive == false)
             {
-                Debug.Log(other.name);
+                AudioManager.Instance.PlayLevelCompleteAudio();
                 animator.SetBool("isFlagActive", true);
                 isFlagActive = true;
             }
@@ -20,7 +21,7 @@ namespace _Project.Levels.Level_2.Scripts
 
         public void LoadNextLevel()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneLoader.Instance.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 668182113139649786}
   - component: {fileID: 4872606211076916804}
   - component: {fileID: 3256077788493188373}
+  - component: {fileID: 4729160129564301254}
   m_Layer: 0
   m_Name: HealthAid
   m_TagString: Untagged
@@ -145,5 +146,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf5c3a2a843a97641ac14f350a63f088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectibleEffect: {fileID: 2006700951661504315, guid: 6c7f968570b196b44a292b6a3db07160, type: 3}
+--- !u!114 &4729160129564301254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2762465057447270951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbad89c7a4f14bffac8130158d96c0ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
