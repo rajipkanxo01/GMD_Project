@@ -174,7 +174,7 @@ namespace _Project.Scripts
         }
 
         public void PlayerDie() {
-            _playerAudioController.PlayHurtSound();
+            _playerAudioController.PlayDeathSound();
             _animator.SetTrigger("dead");
             UIController.instance.DisplayGameOverScreen(1f);
         }
