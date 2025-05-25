@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 1335049586455149821}
   - component: {fileID: 1467858100384570167}
   - component: {fileID: 5334846982887252846}
+  - component: {fileID: 6351326516297988652}
   m_Layer: 3
   m_Name: Player_New
   m_TagString: Player
@@ -267,11 +268,36 @@ MonoBehaviour:
     m_ActionId: 6b6c3ed6-ea87-422a-abf8-3e5206932f18
     m_ActionName: 'Player/Attack3[/Keyboard/l]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6351326516297988652}
+        m_TargetAssemblyTypeName: _Project.Levels.Level_3.Scripts.MovingGround.PlayerInteraction,
+          Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: ef022356-268b-4218-9804-0d44d20b6086
     m_ActionName: 'Player/Interact[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9194162231966068572, guid: 9b00a9a66963f4c4b94ab8cce50166ab, type: 3}
+        m_TargetAssemblyTypeName: _Project.Scripts.UI.UIController, Assembly-CSharp
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 25cf573a-a1c1-499e-98ab-ff4fdefa1736
     m_ActionName: 'Player/PauseScreen[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -441,6 +467,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc1695f36daa4b499f7faaa4f7c5a715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6351326516297988652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3777001416335780327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0bdececbde64dab9452884c8e1aadc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4514498334057250504
