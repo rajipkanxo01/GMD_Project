@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 namespace _Project.Scripts.UI
@@ -9,6 +10,9 @@ namespace _Project.Scripts.UI
         public static UIController instance;
         public GameObject gameOverScreen;
         public GameObject gamePauseScreen;
+
+        [SerializeField] private GameObject gameOverFirstButton;
+        [SerializeField] private GameObject pauseFirstButton;
 
         void Awake()
         {
@@ -23,12 +27,17 @@ namespace _Project.Scripts.UI
 
         public void DisplayGameOverScreen(float delaySeconds)
         {
+            
             StartCoroutine(ShowGameOverScreenAfterDelay(delaySeconds));
         }
 
         private IEnumerator ShowGameOverScreenAfterDelay(float seconds)
         {
             yield return new WaitForSeconds(seconds);
+            
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(gameOverFirstButton);
+            
             gameOverScreen.SetActive(true);
         }
 
@@ -55,6 +64,9 @@ namespace _Project.Scripts.UI
 
         public void PauseGame()
         {
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(pauseFirstButton);
+            
             gamePauseScreen.SetActive(!gamePauseScreen.activeSelf);
             Time.timeScale = gamePauseScreen.activeSelf ? 0 : 1;
         }

@@ -1493,6 +1493,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3259525581468034094, guid: 079045f1af0745e469ac6653464ce111, type: 3}
   m_PrefabInstance: {fileID: 406824594}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &452800158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1146070426456983104, guid: 9b00a9a66963f4c4b94ab8cce50166ab, type: 3}
+  m_PrefabInstance: {fileID: 8413306228215301319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &453700687
 GameObject:
   m_ObjectHideFlags: 0
@@ -111666,6 +111671,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1855071626616125942, guid: 9b00a9a66963f4c4b94ab8cce50166ab, type: 3}
+      propertyPath: m_FirstSelected
+      value: 
+      objectReference: {fileID: 452800158}
     - target: {fileID: 2208165686538234129, guid: 9b00a9a66963f4c4b94ab8cce50166ab, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -111746,6 +111755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6210711521988491308, guid: 9b00a9a66963f4c4b94ab8cce50166ab, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 131.1997
+      objectReference: {fileID: 0}
     - target: {fileID: 7082926591278311829, guid: 9b00a9a66963f4c4b94ab8cce50166ab, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -111757,6 +111770,10 @@ PrefabInstance:
     - target: {fileID: 7676168617373285710, guid: 9b00a9a66963f4c4b94ab8cce50166ab, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092722282884792913, guid: 9b00a9a66963f4c4b94ab8cce50166ab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -7751396688058230733, guid: 9b00a9a66963f4c4b94ab8cce50166ab, type: 3}

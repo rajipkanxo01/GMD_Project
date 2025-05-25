@@ -2053,6 +2053,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 5110514679229240320}
   gamePauseScreen: {fileID: 9092722282884792913}
+  gameOverFirstButton: {fileID: 8407892884628158438}
+  pauseFirstButton: {fileID: 5907683253529933595}
 --- !u!114 &-7751396688058230733
 MonoBehaviour:
   m_ObjectHideFlags: 0
