@@ -16,14 +16,30 @@ namespace _Project.Levels.Level_3.Scripts
         [SerializeField] private Camera mainCamera;
         // [SerializeField] private InputActionReference interactAction;
 
-        private void Awake()
-        {
-            Instance = this;
-            HideTooltip();
-        }
-        
         public void ShowTooltip(string displayText, Vector3 worldPosition)
         {
+            if (string.IsNullOrEmpty(displayText))
+            {
+                Debug.LogWarning("Display text is null or empty. Tooltip will not be shown.");
+                return;
+            }
+            
+            Debug.Log(Instance != null ? "Instance is not null" : "Instance is null");
+            if (tooltipText == null)
+                Debug.LogError("tooltipText is null");
+            if (tooltipTransform == null)
+                Debug.LogError("tooltipTransform is null");
+            if (canvasGroup == null)
+                Debug.LogError("canvasGroup is null");
+            if (mainCamera == null)
+                Debug.LogError("mainCamera is null");
+            
+            Debug.Log("GameObject name: " + gameObject.name);
+
+            // Stop execution if anything important is missing
+            if (tooltipText == null || tooltipTransform == null || canvasGroup == null || mainCamera == null)
+                return;
+            
             tooltipText.text = $"{displayText}";
 
             // Move the tooltip above the world object
@@ -35,6 +51,15 @@ namespace _Project.Levels.Level_3.Scripts
             tooltipTransform.localScale = Vector3.one * 0.8f;
 
             StartCoroutine(FadeIn());
+        }
+
+        private void Awake()
+        {
+            Instance = this;
+            
+            Debug.Log("Universal Tooltip UI Awake");
+            
+            HideTooltip();
         }
 
 
