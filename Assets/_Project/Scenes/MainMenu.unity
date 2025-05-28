@@ -2990,6 +2990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ControlUIManagerRoot
       objectReference: {fileID: 0}
+    - target: {fileID: 7331285651536616185, guid: ef559519e94d51143ab4726bce5873a3, type: 3}
+      propertyPath: mainMenuDefaultButton
+      value: 
+      objectReference: {fileID: 394936056093694623}
     - target: {fileID: 9130949204398130708, guid: ef559519e94d51143ab4726bce5873a3, type: 3}
       propertyPath: m_IsActive
       value: 0
