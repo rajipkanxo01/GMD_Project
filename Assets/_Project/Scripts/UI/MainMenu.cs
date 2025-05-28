@@ -31,6 +31,16 @@ namespace _Project.Scripts.UI
             }
         }
 
+        public void ShowControls()
+        {
+            if (ControlsUIManager.Instance == null)
+            {
+                Debug.LogError("ControlsUIManager not found in the scene!");
+                return;
+            }
+            ControlsUIManager.Instance.ShowControls();
+        }
+
         public void QuitGame()
         {
             Application.Quit();
