@@ -90,13 +90,14 @@ Each level duration is around 3 minutes on average.
 **Goal**: Develop and refine levels.
 
 - Design and Implement 3 levels
-- Audio integration, visual effects
-
+- Add more enemies
+- 
 ### Milestone 3
 
 **Goal**: Enhance user experience and prepare for release.
 
 - Implement final boss fight level
+- Audio integration, visual effects
 - Implement UI elements (main menu, pause screen)
 - Play-testing and bug fixes
 - Add victory conditions
