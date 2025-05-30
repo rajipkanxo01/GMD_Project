@@ -4,6 +4,7 @@ public class BossFightTrigger : MonoBehaviour
 {
     [SerializeField] private BossController boss;
     [SerializeField] private ArenaController arena;
+    [SerializeField] private GameObject bossHealthBar;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -11,6 +12,10 @@ public class BossFightTrigger : MonoBehaviour
 
         boss.StartBossFight();
         arena.LockArena();
-        gameObject.SetActive(false); // optional: disable after triggered
+
+        if (bossHealthBar != null)
+            bossHealthBar.SetActive(true);
+
+        gameObject.SetActive(false);
     }
 }

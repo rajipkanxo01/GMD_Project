@@ -17,6 +17,7 @@ public class BossController : MonoBehaviour
     [SerializeField] private Transform midAttackOrigin;
     [SerializeField] private Transform groundAttackOrigin;
     [SerializeField] private Transform decisionRangeOrigin;
+    [SerializeField] private BossHealthUI bossHealthUI;
     [SerializeField] private LayerMask playerLayer;
 
     private int currentHealth;
@@ -53,6 +54,8 @@ public class BossController : MonoBehaviour
     {
         if (hasStarted) return;
         hasStarted = true;
+        if (bossHealthUI != null)
+            bossHealthUI.SetMaxHealth(maxHealth);
 
         animator.SetTrigger("intro");
         stateMachine.ChangeState(new BossIntroState(this));
@@ -95,7 +98,8 @@ public class BossController : MonoBehaviour
         currentHealth -= amount;
         Debug.Log($"Boss took {amount} damage. Current health: {currentHealth}");
         animator.SetTrigger("take_hit");
-
+        if (bossHealthUI != null)
+            bossHealthUI.UpdateHealth(currentHealth);
         if (currentHealth <= 0)
             Die();
     }
