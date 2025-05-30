@@ -21,8 +21,7 @@ namespace _Project.Scripts.Audio
         [SerializeField] private AudioSource enemyHurtAudio;
         [SerializeField] private AudioSource rockEnemyHitAudio;
         [SerializeField] private AudioSource levelCompleteAudio;
-
-
+        
         [Header("Player Audio")] 
         [SerializeField] private AudioSource playerAttackAudio;
 

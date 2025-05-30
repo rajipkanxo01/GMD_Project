@@ -54,12 +54,7 @@ namespace _Project.Scripts.UI
 
         public void MainMenu()
         {
-            /*int index = SceneManager.GetSceneByName("MainMenu").buildIndex;
-            Debug.Log("Main Menu index: " + index);
-            SceneLoader.Instance.LoadScene(0);*/
-
             SceneManager.LoadSceneAsync("MainMenu");
-
         }
 
         public void PauseGame()
