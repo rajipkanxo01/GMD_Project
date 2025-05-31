@@ -43,22 +43,7 @@ namespace _Project.Levels.Level_3.Scripts.Obstacles.Crusher
                 {
                     float newYScale = Mathf.MoveTowards(movingPart.localScale.y, targetY, scaleSpeed * Time.deltaTime);
                     movingPart.localScale = new Vector3(movingPart.localScale.x, newYScale, movingPart.localScale.z);
-
-
-                    /*if (scalingDown && Mathf.Approximately(targetY, minScaleY))
-                    {
-                        float distance = Vector2.Distance(transform.position, playerTransform.position);
-
-                        if (distance <= shakeDistance)
-                        {
-                            impulseSource?.GenerateImpulse();
-                        }
-                        else
-                        {
-                            CinemachineImpulseManager.Instance.Clear();
-                        }
-                    }*/
-
+                    
                     // Update collider size & offset based on current Y scale
                     _collider.size = new Vector2(_originalSize.x, _originalSize.y * newYScale);
 
