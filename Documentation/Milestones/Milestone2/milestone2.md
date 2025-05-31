@@ -152,7 +152,7 @@ public void ActivateTorch()
 
 ```
 
-The TorchPuzzleManager checks the state of all torches whenever one changes. If all are lit, it activates the platform:
+The `TorchPuzzleManager` checks the state of all torches whenever one changes. If all are lit, it activates the platform:
 
 ```csharp
 private void CheckTorches(TorchController changedTorch)
@@ -171,7 +171,7 @@ private void CheckTorches(TorchController changedTorch)
 
 ```
 
-The PlatformMover script then moves the platform up and down using Mathf.PingPong. This interaction adds pressure and
+The `PlatformMover` script then moves the platform up and down using `Mathf.PingPong`. This interaction adds pressure and
 timing, rewarding the player with vertical access when they succeed.
 
 #### Crusher
@@ -196,7 +196,7 @@ float heightDiff = (_originalSize.y - _originalSize.y * newYScale);
 float newYOffset = _originalOffset.y + (heightDiff / 2f);
 _collider.offset = new Vector2(_originalOffset.x, newYOffset);
 ```
-The crusher alternates between scaling down and up, with a pause (WaitForSeconds) between each slam. This loop runs
+The crusher alternates between scaling down and up, with a pause (`WaitForSeconds`) between each slam. This loop runs
 indefinitely, creating a repeating hazard the player must time their movement around to avoid being hit.
 
 ---
