@@ -13,6 +13,8 @@ namespace _Project.Scripts.Enemies
         internal EnemyCombat EnemyCombat { get; private set; }
         internal Animator Animator { get; private set; }
 
+        internal EnemyAudioController EnemyAudioController { get; private set; }
+
         [Header("Patrol Settings")] [SerializeField]
         private Transform[] patrolPoints;
 
@@ -38,6 +40,7 @@ namespace _Project.Scripts.Enemies
             EnemyDetection = GetComponent<EnemyDetection>();
             EnemyCombat = GetComponent<EnemyCombat>();
             Animator = GetComponent<Animator>();
+            EnemyAudioController = GetComponent<EnemyAudioController>();
         }
 
         private void Start()

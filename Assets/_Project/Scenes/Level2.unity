@@ -365,7 +365,7 @@ Transform:
   m_GameObject: {fileID: 51518876}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.7, y: 4.9, z: -10}
+  m_LocalPosition: {x: 370.7846, y: 10.720119, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5626,7 +5626,7 @@ Transform:
   m_GameObject: {fileID: 1250642482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.7, y: 4.9, z: -10}
+  m_LocalPosition: {x: 370.7846, y: 10.720119, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5694,11 +5694,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6251729479699714506, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.7
+      value: 365.7846
       objectReference: {fileID: 0}
     - target: {fileID: 6251729479699714506, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9
+      value: 9.720119
       objectReference: {fileID: 0}
     - target: {fileID: 6251729479699714506, guid: abca410aa3cd733429feecc64780f8bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -111159,10 +111159,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1288399813}
     m_Modifications:
-    - target: {fileID: 2981420862114176463, guid: 079045f1af0745e469ac6653464ce111, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 296615276524661388}
     - target: {fileID: 3259525581468034094, guid: 079045f1af0745e469ac6653464ce111, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.907578
@@ -111203,14 +111199,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6244293373998576466, guid: 079045f1af0745e469ac6653464ce111, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.299
-      objectReference: {fileID: 0}
-    - target: {fileID: 6244293373998576466, guid: 079045f1af0745e469ac6653464ce111, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.001
-      objectReference: {fileID: 0}
     - target: {fileID: 6435605952955239992, guid: 079045f1af0745e469ac6653464ce111, type: 3}
       propertyPath: m_Name
       value: EnemyRock
@@ -111228,10 +111216,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2005074202}
     m_Modifications:
-    - target: {fileID: 686233372729890442, guid: ab2ef109a478da943beab9aaae7bda55, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 501506061
-      objectReference: {fileID: 0}
     - target: {fileID: 1997245542505383035, guid: ab2ef109a478da943beab9aaae7bda55, type: 3}
       propertyPath: m_Name
       value: Goblin

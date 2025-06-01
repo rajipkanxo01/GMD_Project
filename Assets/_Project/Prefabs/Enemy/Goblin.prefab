@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997245542505383035}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -135.67561, y: -1.6733985, z: 0.21107315}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 7897215735769862381}
   - component: {fileID: 444143588841973255}
   - component: {fileID: 242858910027612442}
+  - component: {fileID: 4309168315056065227}
   m_Layer: 7
   m_Name: Goblin_E
   m_TagString: Enemy
@@ -424,6 +425,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthBar: {fileID: 6277191911398423857}
+--- !u!114 &4309168315056065227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4460845365483910947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c22c8fbf2ab6b4394f800222333dd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9048611648921107541
 PrefabInstance:
   m_ObjectHideFlags: 0

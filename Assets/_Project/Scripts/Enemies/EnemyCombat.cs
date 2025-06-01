@@ -12,6 +12,7 @@ namespace _Project.Scripts.Enemies
         private float _cooldownTimer = Mathf.Infinity;
         private EnemyDetection _detection;
         private Animator _animator;
+        private EnemyAudioController _audioController;
 
         private static readonly int Attack1 = Animator.StringToHash("attack1");
 
@@ -19,6 +20,7 @@ namespace _Project.Scripts.Enemies
         {
             _animator = GetComponent<Animator>();
             _detection = GetComponent<EnemyDetection>();
+            _audioController = GetComponent<EnemyAudioController>();
         }
 
         private void Update()
@@ -30,6 +32,7 @@ namespace _Project.Scripts.Enemies
         {
             if (!IsCooldownComplete()) return;
             _animator.SetTrigger(Attack1);
+            _audioController.PlayAttackSound();
             ResetCooldown();
         }
 

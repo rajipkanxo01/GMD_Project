@@ -8,8 +8,13 @@ namespace _Project.Scripts.Enemies
         [SerializeField] private int maxHealth = 100;
         [SerializeField] private HealthBar healthBar;
 
+        private EnemyAudioController EnemyAudioController;
         private int _currentHealth;
 
+        private void Awake()
+        {
+            EnemyAudioController = GetComponent<EnemyAudioController>();
+        }
         private void Start()
         {
             _currentHealth = maxHealth;
@@ -19,10 +24,12 @@ namespace _Project.Scripts.Enemies
         public void DecreaseEnemyHealth(int damage)
         {
             _currentHealth -= damage;
+            EnemyAudioController.PlayHurtSound();
             healthBar.SetHealthLevel(_currentHealth);
 
             if (_currentHealth <= 0)
             {
+                EnemyAudioController.PlayDeathSound();
                 Die();
             }
         }

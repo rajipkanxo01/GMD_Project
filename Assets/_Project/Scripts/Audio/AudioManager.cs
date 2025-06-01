@@ -18,16 +18,23 @@ namespace _Project.Scripts.Audio
         [SerializeField] private AudioSource mainMenuAudio;
 
         [Header("Misc")] 
-        [SerializeField] private AudioSource enemyHurtAudio;
-        [SerializeField] private AudioSource rockEnemyHitAudio;
         [SerializeField] private AudioSource levelCompleteAudio;
         
         [Header("Player Audio")] 
         [SerializeField] private AudioSource playerAttackAudio;
-
         [SerializeField] private AudioSource playerJumpAudio;
         [SerializeField] private AudioSource playerHurtAudio;
         [SerializeField] private AudioSource playerDeathAudio;
+
+        [Header("Enemy Audio")]
+        [SerializeField] private AudioSource enemyAttackAudio;
+        [SerializeField] private AudioSource enemyHurtAudio;
+        [SerializeField] private AudioSource enemyDeathAudio;
+
+        [Header("Boss Audio")]
+        [SerializeField] private AudioSource bossAttackAudio;
+        [SerializeField] private AudioSource bossHurtAudio;
+        [SerializeField] private AudioSource bossDeathAudio;
 
         [Header("Health Pickup")] 
         [SerializeField] private AudioSource collectHealthAudio;
@@ -67,8 +74,6 @@ namespace _Project.Scripts.Audio
         public void StopOtherAudio()
         {
             mainMenuAudio.Stop();
-            enemyHurtAudio.Stop();
-            rockEnemyHitAudio.Stop();
 
             // Stop misc audio if it's playing
             if (levelCompleteAudio.isPlaying) levelCompleteAudio.Stop();
@@ -87,6 +92,18 @@ namespace _Project.Scripts.Audio
             if (playerHurtAudio.isPlaying) playerHurtAudio.Stop();
             if (playerDeathAudio.isPlaying) playerDeathAudio.Stop();
 
+            //Stop enemy audio if it is playing
+            if (enemyAttackAudio.isPlaying) enemyAttackAudio.Stop();
+            if (enemyHurtAudio.isPlaying) enemyHurtAudio.Stop();
+            if (enemyDeathAudio.isPlaying) enemyDeathAudio.Stop();
+
+            // Stop boss audio if it is playing
+            //Stop enemy audio if it is playing
+            if (bossAttackAudio.isPlaying) bossAttackAudio.Stop();
+            if (bossHurtAudio.isPlaying) bossHurtAudio.Stop();
+            if (bossDeathAudio.isPlaying) bossDeathAudio.Stop();
+
+
             foreach (var source in _levelAudioMap.Values)
             {
                 source.Stop();
@@ -104,10 +121,6 @@ namespace _Project.Scripts.Audio
             mainMenuAudio.Stop();
         }
 
-        public void PlayEnemyHurtAudio()
-        {
-            enemyHurtAudio.Play();
-        }
 
         // Misc Audio Methods
         public void PlayLevelCompleteAudio()
@@ -159,7 +172,40 @@ namespace _Project.Scripts.Audio
 
         public void PlayPlayerAttackSound()
         {
-            rockEnemyHitAudio.Play();
+            playerAttackAudio.Play();
         }
+
+        // Enemy Audio Methods
+
+        public void PlayEnemyAttackSound()
+        {
+            enemyAttackAudio.Play();
+        }
+
+        public void PlayEnemyHurtSound()
+        {
+            enemyHurtAudio.Play();
+        }
+
+        public void PlayEnemyDeathSound()
+        {
+            enemyDeathAudio.Play();
+        }
+
+        public void PlayBossAttackSound()
+        {
+            bossAttackAudio.Play();
+        }
+
+        public void PlayBossHurtSound()
+        {
+            bossHurtAudio.Play();
+        }
+
+        public void PlayBossDeathSound()
+        {
+            bossDeathAudio.Play();
+        }
+
     }
 }
