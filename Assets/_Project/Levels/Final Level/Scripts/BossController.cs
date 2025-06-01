@@ -27,12 +27,14 @@ public class BossController : MonoBehaviour
 
     private Animator animator;
     private BossStateMachine stateMachine;
+    private BossAudioController audioController;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         stateMachine = new BossStateMachine();
         currentHealth = maxHealth;
+        audioController=GetComponent<BossAudioController>();
     }
 
     private void Update()
@@ -79,6 +81,7 @@ public class BossController : MonoBehaviour
         };
 
         animator.SetTrigger(selected);
+        audioController.PlayAttackSound();
 
         Collider2D hit = Physics2D.OverlapCircle(origin.position, attackRange, playerLayer);
         if (hit && hit.CompareTag("Player"))
@@ -98,6 +101,7 @@ public class BossController : MonoBehaviour
         currentHealth -= amount;
         Debug.Log($"Boss took {amount} damage. Current health: {currentHealth}");
         animator.SetTrigger("take_hit");
+        audioController.PlayHurtSound();
         if (bossHealthUI != null)
             bossHealthUI.UpdateHealth(currentHealth);
         if (currentHealth <= 0)
@@ -108,6 +112,7 @@ public class BossController : MonoBehaviour
     {
         isDead = true;
         animator.SetTrigger("death");
+        audioController.PlayDeathSound();
         Destroy(gameObject, 2f);
     }
 

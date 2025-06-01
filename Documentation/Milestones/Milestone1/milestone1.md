@@ -1,4 +1,82 @@
-## Apurva Misha
+## Apurva Mishra
+
+For my first milestone, I used Unity's new input system to implement 2D player movement, which includes running, jumping, and character flipping. I also integrated idle, running, and jumping animations.
+
+### Input Handling
+
+I started by setting up a new Input Actions asset, where I created a Player action map and bound the keys for movement, jumping, attack, etc., to their respective keyboard and gamepad keys.
+These were connected to my player script using `InputAction.CallbackContext`:
+
+```csharp
+public void Move(InputAction.CallbackContext context)
+{
+    _horizontalInput = context.ReadValue<Vector2>().x;
+}
+```
+
+### Prototyping Player Movement
+
+I tested the controls in a simple scene with a square as the player and basic ground tiles. I added a ground check object below the player. It uses `Physics2D.OverlapCircle` to detect if the player is on the ground.
+
+The player moves by setting horizontal velocity:
+
+```csharp
+_rb.linearVelocity = new Vector2(_horizontalInput * speed, _rb.linearVelocity.y);
+```
+
+If the player changes direction, the character flips by inverting the X scale:
+
+```csharp
+private void Flip()
+{
+    _isFacingRight = !_isFacingRight;
+    Vector3 scale = transform.localScale;
+    scale.x *= -1f;
+    transform.localScale = scale;
+}
+```
+
+Jumping starts when the player presses jump and is grounded. It applies an upward impulse. If the player holds the button, the character gains extra height for a short time. This is handled with a timer and a gravity multiplier:
+
+```csharp
+if (_isJumping && _rb.linearVelocity.y > 0)
+{
+    _jumpCounter += Time.deltaTime;
+
+    if (_jumpCounter < jumpTime)
+    {
+        _rb.linearVelocity += _vecGravity * (jumpMultiplier * Time.deltaTime);
+        _animator.SetTrigger("Jump");
+    }
+    else
+    {
+        _isJumping = false;
+    }
+}
+```
+
+When falling, the player uses a fall multiplier to speed up descent and keep movement tight:
+
+```csharp
+if (_rb.linearVelocity.y < 0)
+{
+    _rb.linearVelocity -= _vecGravity * (fallMultiplier * Time.deltaTime);
+}
+```
+
+### Animation
+
+Finally, I created and configured the idle, run, and jump animations using Unity’s Animator. I set up an Animator Controller and added parameters for transitions.
+
+- `move`: true when there is horizontal input
+- `grounded`: true when the player is on the ground
+- `Jump`: triggered when the player starts jumping
+
+```csharp
+_animator.SetBool("grounded", _isGrounded);
+_animator.SetBool("move", _horizontalInput != 0);
+_animator.SetTrigger("Jump");
+```
 
 ---
 

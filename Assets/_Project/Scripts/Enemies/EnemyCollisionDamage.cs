@@ -5,10 +5,16 @@ using UnityEngine;
 namespace _Project.Scripts.Enemies {
     public class EnemyCollisionDamage : MonoBehaviour {
         private Animator _animator;
+        private EnemyAudioController _controller;
         private bool _isHit;
         private float _waitToDestroy = 0.3f;
+        private void Awake()
+        {
+            
+        }
         void Start() {
             _animator = GetComponent<Animator>();
+            _controller = GetComponent<EnemyAudioController>();
         }
 
         void Update() {
@@ -21,6 +27,7 @@ namespace _Project.Scripts.Enemies {
         }
         private void OnCollisionStay2D(Collision2D collision) {
             if (collision.gameObject.CompareTag("Player") && !_isHit) {
+                _controller.PlayAttackSound();
                 PlayerHealthController.instance.TakeObstacleDamage(10);
             }
         }
@@ -29,6 +36,7 @@ namespace _Project.Scripts.Enemies {
             if (other.gameObject.CompareTag("Player")) {
                 FindFirstObjectByType<PlayerController>().Bump();
                 _animator.SetTrigger("hit");
+                _controller.PlayDeathSound();
                 _isHit = true;
             }
         }
