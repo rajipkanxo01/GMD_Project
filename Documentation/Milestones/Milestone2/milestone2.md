@@ -1,4 +1,117 @@
 ﻿## Apurva Mishra
+My tasks in the second milestone consisted of implementing the Final Level for Lumberjack Warrior. In addition to this, I also created a fully functional level boss for the final level.
+
+### Level Design
+
+I kept my level design simple to draw attention to the boss fight. There are no puzzles or complex obstacles. I used Unity's Tilemap system with a Rule Tile to place terrain efficiently. The Rule Tile let me automate edge and corner placements without needing to paint each tile by hand.
+
+For the background, I used a multi-layer parallax effect to add depth. I applied Rajib’s `ParallaxInfiniteScroll` script and tuned four layers to scroll at different speeds. Each layer loops as the player moves, giving the level a smooth and immersive visual flow.
+
+![FinalLevelTilemap](FinalLevelTilemap.png)
+
+### Arena Lock System
+
+To contain the player within the arena while the boss fight plays out, I built an arena lock. When the player enters the trigger zone, invisible walls activate and trap them inside. This is handled by the `ArenaController`:
+
+```csharp
+public class ArenaController : MonoBehaviour
+{
+    [SerializeField] private GameObject[] arenaWalls;
+
+    public void LockArena()
+    {
+        foreach (var wall in arenaWalls)
+            wall.SetActive(true);
+    }
+
+    public void UnlockArena()
+    {
+        foreach (var wall in arenaWalls)
+            wall.SetActive(false);
+    }
+}
+```
+
+![FinalLevelArenaLock](FinalLevelArenaLock.png)
+
+### Boss AI System
+
+The boss runs on a custom state machine. Each state follows the Single Responsibility Principle and is defined using the `IBossState` interface. This setup makes it easier to manage transitions between behaviors like intro, attack, and death.
+
+The boss detects when the player is within decision range and either chases or attacks. Movement is restricted to the X-axis, and walking is paused during attacks or special animations. The `BossAttackState` handles this logic:
+
+```csharp
+public class BossAttackState : IBossState
+{
+    private readonly BossController boss;
+
+    public BossAttackState(BossController boss)
+    {
+        this.boss = boss;
+    }
+
+    public void Update()
+    {
+        var state = boss.Animator.GetCurrentAnimatorStateInfo(0);
+        if (state.IsTag("attack") || state.IsTag("hit") || state.IsTag("death") || state.IsTag("intro"))
+        {
+            boss.SetWalking(false);
+            return;
+        }
+
+        boss.FacePlayer();
+
+        float distance = Vector2.Distance(boss.transform.position, boss.Player.position);
+
+        if (distance <= boss.AttackDecisionRange)
+        {
+            boss.SetWalking(false);
+            if (boss.IsAttackCooldownReady())
+                boss.TryAttack();
+        }
+        else
+        {
+            boss.SetWalking(true);
+            Vector3 target = boss.Player.position;
+            target.y = boss.transform.position.y;
+            boss.transform.position = Vector3.MoveTowards(
+                boss.transform.position,
+                target,
+                boss.ChaseSpeed * Time.deltaTime
+            );
+        }
+    }
+
+    public void Enter() => boss.SetWalking(false);
+    public void Exit() => boss.SetWalking(false);
+}
+```
+
+### Boss UI and Health
+
+I added a health bar that stays hidden until the boss fight starts. When the player enters the arena, the boss triggers its intro animation, and the UI is initialized:
+
+```csharp
+public void StartBossFight()
+{
+    if (hasStarted) return;
+    hasStarted = true;
+
+    if (bossHealthUI != null)
+        bossHealthUI.SetMaxHealth(maxHealth);
+
+    animator.SetTrigger("intro");
+    stateMachine.ChangeState(new BossIntroState(this));
+}
+```
+
+The health bar updates as the boss takes damage. When health reaches zero, the boss plays a death animation and is destroyed.
+
+### Boss Attacks
+
+The boss randomly chooses between three attack types. Each attack has its own animation and hitbox. The system uses `Physics2D.OverlapCircle` to detect if the player is in range.
+
+When hit, the boss flinches and loses health. This feedback helps the player know when they’ve landed a successful hit.
 
 ---
 
