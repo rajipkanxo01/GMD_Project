@@ -1,5 +1,77 @@
 ﻿## Apurva Mishra
 
+In this milestone, I focused on adding audio feedback for all enemies and the final level boss. I also implemented the victory condition for the final level, and fixed some gameplay bugs.
+
+---
+
+### Enemy & Boss Audio Integration
+
+I began my task by adding methods the `AudioManager` for enemy and boss sound effects. These included `PlayEnemyAttackSound()`, `PlayEnemyHurtSound()`, `PlayEnemyDeathSound()` and vice versa for the boss. Then I created boss and enemy audio controller scripts to act as bridges between gameplay logic and the audio system.
+
+I added `EnemyAudioController` to all enemy prefabs. Then I updated the scripts to trigger sounds during combat. In `EnemyCombat`, attack sound was played during `TryAttack()`:
+
+```csharp
+public void TryAttack()
+        {
+            if (!IsCooldownComplete()) return;
+            _animator.SetTrigger(Attack1);
+            _audioController.PlayAttackSound();
+            ResetCooldown();
+        }
+```
+
+In `EnemyHealth`, hurt and death sound was triggered when taking damage:
+
+```csharp
+public void DecreaseEnemyHealth(int damage)
+        {
+            _currentHealth -= damage;
+            EnemyAudioController.PlayHurtSound();
+            healthBar.SetHealthLevel(_currentHealth);
+
+            if (_currentHealth <= 0)
+            {
+                EnemyAudioController.PlayDeathSound();
+                Die();
+            }
+        }
+```
+
+For enemies using collision-based damage,aka the rock enemy, I called sound method directly inside collision triggers to match their custom behavior.
+
+The boss followed the same pattern. I attached a `BossAudioController` to the boss prefab and added calls in the `BossController` to play attack, hurt, and death sounds based on the boss's current state:
+
+```csharp
+audioController.PlayAttackSound();
+audioController.PlayHurtSound();
+audioController.PlayDeathSound();
+```
+
+All sound logic was kept modular. This kept the controller scripts simple, while all actual playback and sound asset management remained in the `AudioManager`.
+
+---
+
+### Final Level Victory Conditions
+
+I also implemented the **victory condition** for the final boss fight. After the boss is defeated, the game plays the level-complete sound and returns to the main menu after a short delay. This was handled by a separate `FinalLevelEnd` script placed on a GameObject in the scene. The `BossController` calls `HandleBossDefeat()` when the boss dies, which plays the level completed sound and switches to main menu.
+```csharp
+public void HandleBossDefeat()
+    {
+        AudioManager.Instance.PlayLevelCompleteAudio();
+        Invoke(nameof(GoToMainMenu), delayBeforeMenu);
+    }
+```
+
+---
+
+### Bug Fixes
+
+To wrap up the milestone, I fixed some gameplay issues in the final level:
+
+* **Water death:** Player dies when touching tiles marked with the water layer.
+* **Delay before changing scenes:** Ensured the scene only changes after the boss finishes dying.
+* **Tilemap cleanup:** Removed unnecessary/stray tiles and adjusted sorting layers.
+
 ---
 
 ## Pramesh Shrestha (325833)

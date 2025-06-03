@@ -18,6 +18,7 @@ public class BossController : MonoBehaviour
     [SerializeField] private Transform groundAttackOrigin;
     [SerializeField] private Transform decisionRangeOrigin;
     [SerializeField] private BossHealthUI bossHealthUI;
+    [SerializeField] private FinalLevelEnd finalLevelEnd;
     [SerializeField] private LayerMask playerLayer;
 
     private int currentHealth;
@@ -28,13 +29,12 @@ public class BossController : MonoBehaviour
     private Animator animator;
     private BossStateMachine stateMachine;
     private BossAudioController audioController;
-
     private void Awake()
     {
         animator = GetComponent<Animator>();
         stateMachine = new BossStateMachine();
         currentHealth = maxHealth;
-        audioController=GetComponent<BossAudioController>();
+        audioController = GetComponent<BossAudioController>();
     }
 
     private void Update()
@@ -113,6 +113,7 @@ public class BossController : MonoBehaviour
         isDead = true;
         animator.SetTrigger("death");
         audioController.PlayDeathSound();
+        finalLevelEnd?.HandleBossDefeat();
         Destroy(gameObject, 2f);
     }
 
