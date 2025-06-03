@@ -4,6 +4,141 @@
 
 ## Pramesh Shrestha (325833)
 
+### Implementation of Level 1 and Environmental Design
+
+For the second milestone, I focused on implementing Level 1 of the game and designing its environment to match the theme and gameplay experience we envisioned for Lumberjack Warrior.
+
+We decided to divide the game into three levels: Level 1, Level 2, and the Final Boss Fight Level. I took responsibility for building Level 1 and began by researching the best practices for level design in Unity. During this process, I learned about Rule Tiles, which provide an efficient way to construct 2D game levels. After watching YouTube tutorials and experimenting with the tool, I chose this approach for building the level.
+
+### Assets and Visual Style
+
+To match the game’s forest-based concept, I searched for suitable tile sets and backgrounds. I downloaded a forest-themed tile map and a layered background on the Unity Asset Store. I also downloaded a full bundle of environmental assets, including trees, road signs, hazards, rocks, grass, and logs from Unity Asset Store. These assets are used not only in Level 1 but also across other levels for consistency. For the health collectibles, I used an image found online that blends well with the natural forest theme.
+
+### Designing Level 1 Using Rule Tiles
+
+To speed up level creation and keep the layout consistent, I used a Rule Tile setup like the one shown in the image below. A Rule Tile automatically places the correct tile sprite based on neighbouring tiles, which reduces repetitive work and avoids visual errors. For example, corner pieces, flat ground, and side edges are all chosen dynamically based on what tiles are placed nearby.
+
+In Unity, I configured rules by assigning sprites to different conditions like placing a certain tile if there’s another tile to the left, right, or below.
+
+![Rule tile of level 1](./Level1_rule_tile.png) ![Rule tile of level 1](./Level1_rule_tile2.png)
+
+*Figure 1: Rule tile of Level 1*
+
+As a result, I could paint large sections of terrain while the Rule Tile system handled the details. This saved time and helped create a cleaner, more natural-looking environment as shown in figure below.
+
+![Level 1 Terrain](./Level_1_terrain.png)
+
+*Figure 2: Level 1 Terrain*
+
+### Overall Level 1 Design
+
+The level design introduces a balance of challenge, strategy, and engagement through a variety of mechanics:
+
+- **Combat and Hazards**: The player must defeat enemies and avoid hazards like water pits. Mistimed jumps result in instant death, adding tension and encouraging careful play.
+
+![Water_pits](./Water_pits.png)
+
+*Figure 3: Water pits in Level 1*
+
+This is handled using a DeathPlane script, which detects when the player falls into water. The script uses Unity’s OnTriggerEnter2D method to check if the object entering the water zone has the tag "Player". If it does, it retrieves the PlayerController component attached to the player and calls the PlayerDie() method to trigger the player’s death logic. Additionally, it calls the DisplayGameOverScreen() function from the UIController, which shows a game over screen with a short delay of 0.1 seconds. The code snippet below shows the implementation of this logic:
+
+```csharp
+public class DeathPlane : MonoBehaviour
+  {
+    private void OnTriggerEnter2D(Collider2D other) {
+      if (other.CompareTag("Player")) {
+        Debug.Log("Player death");
+          PlayerController player = other.GetComponent<PlayerController>();
+            if (player != null) {
+                player.PlayerDie();
+            }
+        if (UIController.instance != null) {
+          UIController.instance.DisplayGameOverScreen(0.1f);
+        }
+        
+      }
+    }
+```
+
+- **Box Puzzle**: One puzzle involves pushing a box to be able to jump over to the other side without falling into water as shown in image below. If the player pushes the box too quickly or carelessly, the box falls into the water, making it impossible to proceed. This mechanic demands attention and patience.
+
+![Box Puzzle](./Box_puzzle.png)
+
+*Figure 4: Box Puzzle in Level 1*
+
+- **Falling Log Puzzle**:
+  Another puzzle challenges the player to jump across floating logs. These logs fall shortly after being touched, requiring quick and precise movements. The image below shows that part of the level.
+
+![Falling Log Puzzle](./Falling_logs.png)
+
+*Figure 5: Falling Log Puzzle in Level 1*
+
+These mechanics reflect several Aesthetics of Play:
+
+- Challenge: The precise jumps and strategic puzzles require skill and timing.
+- Discovery: Players uncover how each puzzle works as they progress.
+- Sensation: The dynamic environment with falling logs and moving platforms creates an engaging, almost physical response.
+- Narrative: Environmental storytelling is used through the natural layout, road signs, and hazard placement to suggest danger, progress, and pathfinding.
+
+### Game Flow and Design Decisions
+
+Level 1 allows players to jump over enemies to avoid combat. This was a conscious choice due to the absence of checkpoints. If the player dies, they must restart the level from the beginning, so allowing combat to be optional gives players some control over risk.
+
+The environment feels alive and natural, with varied trees, terrain, and visual cues that guide players without breaking immersion. Health collectibles are placed strategically throughout the level to support players who explore or take more damage during combat.
+
+### Infinite Parallax Background
+
+To enhance the depth and visual quality of the level, I implemented an infinite parallax scrolling background. I selected a background with five distinct layers. Each layer moves at a different speed relative to the camera to simulate depth - layers closer to the camera move faster than those farther away.
+
+In the Unity hierarchy, the setup is organized under a parent object called ParallaxBackground, as shown in the image below. Each background layer (from BGLayer1 to BGLayer5) contains two child objects. These child objects are duplicates of the same background image, placed side by side. As the camera moves, the background layers scroll horizontally.
+
+![Parallax Background Setup](./Parallax_background_folder_structure.png)
+
+*Figure 6: Parallax Background Setup in Unity*
+
+When one of the background images moves out of view, its position is reset to the other side of the pair, creating a seamless looping effect. This structure allows for a continuous scrolling environment, giving the illusion that the player is moving through an endless forest. The image below highlights one of the layers from the parallax background setup.
+
+![Parallax Background Layer](./Level1_background.png)
+
+*Figure 7: Parallax Background Layer in Level 1*
+
+### Enemy Animations and Damage Logic
+
+I created animations for two enemy types: a skeleton and a rolling rock. The skeleton sprite was downloaded from monopixelart.itch.io, while the rock was part of a Udemy course resource. Both enemies were animated using Unity’s Animator system with idle and walk states. Additionally, the skeleton has an attack animation to make it more dynamic during combat.
+
+To support combat, I also added logic that allows the player to damage enemies. The script checks whether the player’s attack hits any enemy within a certain range. It uses Unity’s Physics2D.OverlapCircleAll method to detect all colliders in the defined enemyLayer around the attackPoint.
+
+Each hit collider is then checked using TryGetComponent to see if it is an enemy. If it's an enemy, the TakeDamage() method is called on that enemy.
+
+The code snippets below show the full implementation of this logic in the project:
+
+```csharp
+      public void DamageEnemy()
+        {
+            Debug.Log("Attempting to damage enemy...");
+
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+
+            foreach (Collider2D enemyCollider in hitEnemies)
+            {
+                if (enemyCollider.TryGetComponent(out Enemy enemy))
+                {
+                    enemy.TakeDamage(attackDamage);
+                    Debug.Log($"Damaged Enemy: {enemy.name}");
+                }
+                else if (enemyCollider.TryGetComponent(out BossController boss))
+                {
+                    boss.TakeDamage(attackDamage);
+                    Debug.Log($"Damaged Boss: {boss.name}");
+                }
+            }
+        }
+```
+```csharp
+    public void TakeDamage(int damage) {
+            EnemyHealth.DecreaseEnemyHealth(damage);
+        }
+```
 ---
 
 ## Rajib Paudyal (325836)
