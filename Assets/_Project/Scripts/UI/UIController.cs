@@ -54,6 +54,7 @@ namespace _Project.Scripts.UI
 
         public void MainMenu()
         {
+            Time.timeScale = 1;
             SceneManager.LoadSceneAsync("MainMenu");
         }
 
