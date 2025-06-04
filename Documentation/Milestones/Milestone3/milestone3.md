@@ -94,6 +94,17 @@ The main menu was built as a separate scene. In my opinion, this is a good appro
 
 When the screen loads, the Start button is highlighted by default as can be seen in the Main menu figure below. Players can navigate the menu using a mouse, keyboard, joystick, or controller. This flexibility ensures accessibility across different input methods.
 
+The following code loads the main menu scene when the game starts:
+
+```csharp
+    public void MainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadSceneAsync("MainMenu");
+    }
+```
+This method ensures that when the player returns to the main menu, the game’s time scale is reset to normal by setting Time.timeScale to 1. This is important because if the game was previously paused (with Time.timeScale = 0), time would remain frozen across scenes. By resetting it before loading the main menu scene, it guarantees that the game runs normally when the player starts a new game or navigates through the menu.
+
 The main menu provides three options – Start, Controls and Quit.
 
 ![Main Menu](./Main_menu.png)
@@ -104,17 +115,17 @@ When the Start button is selected, the game transitions from the main menu to Le
 
 ```csharp
    public void StartGame()
+    {
+        if (SceneLoader.Instance != null)
         {
-            if (SceneLoader.Instance != null)
-            {
-                SceneLoader.Instance.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                AudioManager.Instance.StopMenuAudio();
-            }
-            else
-            {
-                Debug.LogError("LoadingScene not found in the scene!");
-            }
+            SceneLoader.Instance.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            AudioManager.Instance.StopMenuAudio();
         }
+        else
+        {
+            Debug.LogError("LoadingScene not found in the scene!");
+        }
+    }
 ```
 
 This method checks if the SceneLoader instance exists. If it does, it loads the next scene in the build index (which is Level 1) and stops the background music playing in the menu.
@@ -122,10 +133,10 @@ This method checks if the SceneLoader instance exists. If it does, it loads the 
 When the Quit button is selected, the game closes. This is done with the following simple method:
 
 ```csharp
-public void QuitGame()
-        {
-            Application.Quit();
-        }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 ```
 
 This tells Unity to close the application. In the editor, this won’t visibly quit the game, but in a built version, it exits the program entirely.
@@ -142,7 +153,28 @@ The pause menu screen allows players to pause the game and choose what to do nex
 
 When the pause button is pressed, the PauseGame() method is triggered. It toggles the visibility of the pause menu panel and adjusts the game’s Time.timeScale value. If the pause screen is active, time is frozen by setting Time.timeScale = 0; if it is inactive, time resumes by setting it back to 1. This is done to stop all gameplay-related movement and animations while the game is paused.
 
+The following code handles the pause functionality:
+```csharp
+   public void PauseGame()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(pauseFirstButton);
+        
+        gamePauseScreen.SetActive(!gamePauseScreen.activeSelf);
+        Time.timeScale = gamePauseScreen.activeSelf ? 0 : 1;
+    }
+```
+
 The ResumeGame() method is used when the player selects the Resume button. It simply hides the pause menu and sets Time.timeScale back to 1 to continue gameplay. When the player chooses to return to the main menu, the MainMenu() method loads the "MainMenu" scene, allowing the game to cleanly transition back to the main interface. Finally, the QuitGame() method calls Application.Quit(), which closes the game.
+
+The following code handles the resume functionality:
+```csharp
+  public void ResumeGame()
+    {
+        gamePauseScreen.SetActive(!gamePauseScreen.activeSelf);
+        Time.timeScale = 1;
+    }
+```
 
 The game over screen appears when the player dies, giving a clear visual indication that the game has ended. It features a simple layout with two buttons - Restart and Main Menu as can be seen in figure below.
 
@@ -156,10 +188,10 @@ To make the transition to the game over screen feel smoother, a short delay is a
 
 ```csharp
     public void DisplayGameOverScreen(float delaySeconds)
-        {
-            
-            StartCoroutine(ShowGameOverScreenAfterDelay(delaySeconds));
-        }
+    {
+        
+        StartCoroutine(ShowGameOverScreenAfterDelay(delaySeconds));
+    }
 ```
 
 This method starts a coroutine named ShowGameOverScreenAfterDelay, which waits for the number of seconds passed in through delaySeconds before showing the game over UI. Using a coroutine in this way allows the screen to appear after a brief pause without freezing the game.
@@ -170,19 +202,19 @@ I also added a background music to the main menu. The music plays automatically 
 
 ```csharp
       public class MainMenu : MonoBehaviour
-    {
-        void Start()
         {
-            if (AudioManager.Instance != null)
+            void Start()
             {
-                AudioManager.Instance.PlayMenuAudio();
-            }
-            else
-            {
-                Debug.LogError("AudioManager not found in scene!");
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayMenuAudio();
+                }
+                else
+                {
+                    Debug.LogError("AudioManager not found in scene!");
+                }
             }
         }
-    }
 ```
 
 This method runs as soon as the main menu scene starts. It first checks if the AudioManager instance exists (to avoid null reference errors). If it does, it calls PlayMenuAudio(), which plays the assigned menu background track. Using the Start() method ensures that the music begins immediately without needing any player input.
