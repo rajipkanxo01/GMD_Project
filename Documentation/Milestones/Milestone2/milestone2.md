@@ -186,6 +186,24 @@ public class DeathPlane : MonoBehaviour
 
 *Figure 5: Falling Log Puzzle in Level 1*
 
+This script controls the log that begins to fall when the player touches it. When the log detects a collision with the player and it hasn’t already started falling, it sets a flag (isFalling) to true and triggers a delayed action using Invoke. After the specified delay (fallDelay), the StartFalling method is called, which makes the log non-kinematic so that it is affected by physics, and sets its gravity scale to fallSpeed, causing it to fall. The script for the falling log is below:
+
+```csharp
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && !isFalling)
+        {
+            isFalling = true;
+            Invoke("StartFalling", fallDelay);
+        }
+    }
+
+    void StartFalling()
+    {
+        rb.isKinematic = false;
+        rb.gravityScale = fallSpeed; 
+    }
+```
 These mechanics reflect several Aesthetics of Play:
 
 - Challenge: The precise jumps and strategic puzzles require skill and timing.
