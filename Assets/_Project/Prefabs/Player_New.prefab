@@ -438,7 +438,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackPoint: {fileID: 2213327475672545444}
-  attackDamage: 10
+  attackDamage: 30
 --- !u!114 &1467858100384570167
 MonoBehaviour:
   m_ObjectHideFlags: 0
