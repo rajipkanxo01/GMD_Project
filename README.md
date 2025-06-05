@@ -19,7 +19,7 @@
 
 [Final Product Blog](https://github.com/rajipkanxo01/GMD_Project/blob/develop/Documentation/Final%20Game%20Showcase/Final%20Game%20Product.md)
 
-## Assests Used
+## Assets Used
 
 [Level1 Tilemap](https://assetstore.unity.com/packages/2d/environments/2d-pixel-art-platformer-biome-plains-255002)
 
@@ -40,3 +40,6 @@
 [Trees Prop](https://arwe7.itch.io/free-animated-pixel-art-tree-pack)
 
 [2d Torch](https://rone3190.itch.io/torch-32x32-animated)
+
+## YouTube Video Link
+https://www.youtube.com/watch?v=HOn8ZzrxHZk
