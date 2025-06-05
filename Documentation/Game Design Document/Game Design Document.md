@@ -60,11 +60,9 @@ The goal is to create an immersive experience with smooth combat including some 
 ## Objective & Progression
 Each level duration is around 3 minutes on average.
 
-- **Level 1**: Basic level with simple obstacles and easy to defeat enemies. Complete level by retrieving a key from a chest.
-- **Level 2**: More difficult enemies and advanced obstacles. Use the key from the previous level to unlock a cage and
-  obtain a power-up potion that increases size and health of player.
-- **Level 3**: Find and activate a portal to reach the final boss.
-- **Level 4**: Defeat the final boss.
+- **Level 1**: Basic level with simple obstacles, and simple puzzles and easy to defeat enemies.
+- **Level 2**: Advanced obstacles and advanced puzzles.
+- **Level 3**: Final level with boss fight.
 
 ## Game Systems
 
@@ -89,14 +87,13 @@ Each level duration is around 3 minutes on average.
 
 **Goal**: Develop and refine levels.
 
-- Design and Implement 3 levels
-- Audio integration, visual effects
+- Design and Implement 3 levels including puzzles
+- Add enemies including attack and movement animations
 
 ### Milestone 3
 
 **Goal**: Enhance user experience and prepare for release.
-
-- Implement final boss fight level
-- Implement UI elements (main menu, pause screen)
+- Audio integration,
+- Implement UI elements (main menu, pause screen, game over screen, loading screen)
 - Play-testing and bug fixes
-- Add victory conditions
+
