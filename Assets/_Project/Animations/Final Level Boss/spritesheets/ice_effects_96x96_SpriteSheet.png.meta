@@ -1,0 +1,2756 @@
+fileFormatVersion: 2
+guid: 4b7650fd37e96254d9ff0d607336442d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5616873960237252445
+    second: ice_effects_96x96_SpriteSheet_0
+  - first:
+      213: -8803744366485424464
+    second: ice_effects_96x96_SpriteSheet_1
+  - first:
+      213: 2643369253037324438
+    second: ice_effects_96x96_SpriteSheet_2
+  - first:
+      213: -2416158831839500775
+    second: ice_effects_96x96_SpriteSheet_3
+  - first:
+      213: -7727448877319050325
+    second: ice_effects_96x96_SpriteSheet_4
+  - first:
+      213: -1714287323341012827
+    second: ice_effects_96x96_SpriteSheet_5
+  - first:
+      213: 7091420730562813323
+    second: ice_effects_96x96_SpriteSheet_6
+  - first:
+      213: -8492039595010595727
+    second: ice_effects_96x96_SpriteSheet_7
+  - first:
+      213: 3516406521917222647
+    second: ice_effects_96x96_SpriteSheet_8
+  - first:
+      213: -9180552275507429489
+    second: ice_effects_96x96_SpriteSheet_9
+  - first:
+      213: 2314856470667503307
+    second: ice_effects_96x96_SpriteSheet_10
+  - first:
+      213: 9174843086342855246
+    second: ice_effects_96x96_SpriteSheet_11
+  - first:
+      213: 3247299135215914484
+    second: ice_effects_96x96_SpriteSheet_12
+  - first:
+      213: -2642763678900282775
+    second: ice_effects_96x96_SpriteSheet_13
+  - first:
+      213: 1717781591685635852
+    second: ice_effects_96x96_SpriteSheet_14
+  - first:
+      213: -5318651894109449073
+    second: ice_effects_96x96_SpriteSheet_15
+  - first:
+      213: 4122203447969299661
+    second: ice_effects_96x96_SpriteSheet_16
+  - first:
+      213: -4815345741413879268
+    second: ice_effects_96x96_SpriteSheet_17
+  - first:
+      213: 3368796442345065939
+    second: ice_effects_96x96_SpriteSheet_18
+  - first:
+      213: 6277853265355088935
+    second: ice_effects_96x96_SpriteSheet_19
+  - first:
+      213: -1644305471817391286
+    second: ice_effects_96x96_SpriteSheet_20
+  - first:
+      213: 2185003665961804583
+    second: ice_effects_96x96_SpriteSheet_21
+  - first:
+      213: 7939442483768124545
+    second: ice_effects_96x96_SpriteSheet_22
+  - first:
+      213: 7111372601585990145
+    second: ice_effects_96x96_SpriteSheet_23
+  - first:
+      213: -4983503959465758225
+    second: ice_effects_96x96_SpriteSheet_24
+  - first:
+      213: -7301153427590510689
+    second: ice_effects_96x96_SpriteSheet_25
+  - first:
+      213: -5888554433303201101
+    second: ice_effects_96x96_SpriteSheet_26
+  - first:
+      213: -7669389757113401502
+    second: ice_effects_96x96_SpriteSheet_27
+  - first:
+      213: -8664863791060391646
+    second: ice_effects_96x96_SpriteSheet_28
+  - first:
+      213: -7728048351855964088
+    second: ice_effects_96x96_SpriteSheet_29
+  - first:
+      213: -2224189427030212254
+    second: ice_effects_96x96_SpriteSheet_30
+  - first:
+      213: -1429193751079077232
+    second: ice_effects_96x96_SpriteSheet_31
+  - first:
+      213: -2975009733147194387
+    second: ice_effects_96x96_SpriteSheet_32
+  - first:
+      213: 5718111592740388959
+    second: ice_effects_96x96_SpriteSheet_33
+  - first:
+      213: -2592655528141840560
+    second: ice_effects_96x96_SpriteSheet_34
+  - first:
+      213: -5292165375573405839
+    second: ice_effects_96x96_SpriteSheet_35
+  - first:
+      213: 8151404769374000886
+    second: ice_effects_96x96_SpriteSheet_36
+  - first:
+      213: 6505065748714498172
+    second: ice_effects_96x96_SpriteSheet_37
+  - first:
+      213: -4421439379591592710
+    second: ice_effects_96x96_SpriteSheet_38
+  - first:
+      213: 7957810707948656236
+    second: ice_effects_96x96_SpriteSheet_39
+  - first:
+      213: 351345527551966020
+    second: ice_effects_96x96_SpriteSheet_40
+  - first:
+      213: 4591310093511806509
+    second: ice_effects_96x96_SpriteSheet_41
+  - first:
+      213: 5804703632632726450
+    second: ice_effects_96x96_SpriteSheet_42
+  - first:
+      213: 1484566321145076183
+    second: ice_effects_96x96_SpriteSheet_43
+  - first:
+      213: -5511553731620482590
+    second: ice_effects_96x96_SpriteSheet_44
+  - first:
+      213: -1409549461187548979
+    second: ice_effects_96x96_SpriteSheet_45
+  - first:
+      213: -2695051051194171309
+    second: ice_effects_96x96_SpriteSheet_46
+  - first:
+      213: 8995981030177816877
+    second: ice_effects_96x96_SpriteSheet_47
+  - first:
+      213: 7813741177117020169
+    second: ice_effects_96x96_SpriteSheet_48
+  - first:
+      213: 6950509360864567352
+    second: ice_effects_96x96_SpriteSheet_49
+  - first:
+      213: 2198719642641367878
+    second: ice_effects_96x96_SpriteSheet_50
+  - first:
+      213: -548902495232837383
+    second: ice_effects_96x96_SpriteSheet_51
+  - first:
+      213: 3799873046766581358
+    second: ice_effects_96x96_SpriteSheet_52
+  - first:
+      213: -3056187023461677181
+    second: ice_effects_96x96_SpriteSheet_53
+  - first:
+      213: 5403079463239192624
+    second: ice_effects_96x96_SpriteSheet_54
+  - first:
+      213: -1978364659103141181
+    second: ice_effects_96x96_SpriteSheet_55
+  - first:
+      213: -8420621134340194837
+    second: ice_effects_96x96_SpriteSheet_56
+  - first:
+      213: -1907919872824303187
+    second: ice_effects_96x96_SpriteSheet_57
+  - first:
+      213: -1866098362022578312
+    second: ice_effects_96x96_SpriteSheet_58
+  - first:
+      213: 7331695345245585959
+    second: ice_effects_96x96_SpriteSheet_59
+  - first:
+      213: 5056570020815658994
+    second: ice_effects_96x96_SpriteSheet_60
+  - first:
+      213: -768385438011184572
+    second: ice_effects_96x96_SpriteSheet_61
+  - first:
+      213: -2856344041651968706
+    second: ice_effects_96x96_SpriteSheet_62
+  - first:
+      213: -7465498253786066103
+    second: ice_effects_96x96_SpriteSheet_63
+  - first:
+      213: -8921040879779806108
+    second: ice_effects_96x96_SpriteSheet_64
+  - first:
+      213: 716064191375578036
+    second: ice_effects_96x96_SpriteSheet_65
+  - first:
+      213: 227442661540455065
+    second: ice_effects_96x96_SpriteSheet_66
+  - first:
+      213: -8215554680298690845
+    second: ice_effects_96x96_SpriteSheet_67
+  - first:
+      213: 846576747433790461
+    second: ice_effects_96x96_SpriteSheet_68
+  - first:
+      213: -1792513214827821043
+    second: ice_effects_96x96_SpriteSheet_69
+  - first:
+      213: 1361974968485484641
+    second: ice_effects_96x96_SpriteSheet_70
+  - first:
+      213: -8327646612592930253
+    second: ice_effects_96x96_SpriteSheet_71
+  - first:
+      213: -7577231925358629450
+    second: ice_effects_96x96_SpriteSheet_72
+  - first:
+      213: 6725051582392045388
+    second: ice_effects_96x96_SpriteSheet_73
+  - first:
+      213: -747738331131899189
+    second: ice_effects_96x96_SpriteSheet_74
+  - first:
+      213: -11465477365243897
+    second: ice_effects_96x96_SpriteSheet_75
+  - first:
+      213: 9147038017994472055
+    second: ice_effects_96x96_SpriteSheet_76
+  - first:
+      213: -8043002790143190809
+    second: ice_effects_96x96_SpriteSheet_77
+  - first:
+      213: -844337116136233212
+    second: ice_effects_96x96_SpriteSheet_78
+  - first:
+      213: 5363440513366951966
+    second: ice_effects_96x96_SpriteSheet_79
+  - first:
+      213: 7573327001836930420
+    second: ice_effects_96x96_SpriteSheet_80
+  - first:
+      213: 5968839064026043942
+    second: ice_effects_96x96_SpriteSheet_81
+  - first:
+      213: -8609609756909410798
+    second: ice_effects_96x96_SpriteSheet_82
+  - first:
+      213: -6509929183849849782
+    second: ice_effects_96x96_SpriteSheet_83
+  - first:
+      213: -7441143805295849714
+    second: ice_effects_96x96_SpriteSheet_84
+  - first:
+      213: -5938068691943120507
+    second: ice_effects_96x96_SpriteSheet_85
+  - first:
+      213: 8515933224586565303
+    second: ice_effects_96x96_SpriteSheet_86
+  - first:
+      213: 556498627828816652
+    second: ice_effects_96x96_SpriteSheet_87
+  - first:
+      213: -2779029298389486187
+    second: ice_effects_96x96_SpriteSheet_88
+  - first:
+      213: -3973035359834625279
+    second: ice_effects_96x96_SpriteSheet_89
+  - first:
+      213: 7468743848364351553
+    second: ice_effects_96x96_SpriteSheet_90
+  - first:
+      213: 6389115026584856661
+    second: ice_effects_96x96_SpriteSheet_91
+  - first:
+      213: 7435518319187391357
+    second: ice_effects_96x96_SpriteSheet_92
+  - first:
+      213: -2412659294153705788
+    second: ice_effects_96x96_SpriteSheet_93
+  - first:
+      213: 7964548167108740418
+    second: ice_effects_96x96_SpriteSheet_94
+  - first:
+      213: -4561209263448250267
+    second: ice_effects_96x96_SpriteSheet_95
+  - first:
+      213: 669063366367306677
+    second: ice_effects_96x96_SpriteSheet_96
+  - first:
+      213: -4968197139608948931
+    second: ice_effects_96x96_SpriteSheet_97
+  - first:
+      213: 477723310256489515
+    second: ice_effects_96x96_SpriteSheet_98
+  - first:
+      213: -8014713939983679913
+    second: ice_effects_96x96_SpriteSheet_99
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 587
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a0cae384eadc02b0800000000000000
+      internalID: -5616873960237252445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 491
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b63a469421d2d580800000000000000
+      internalID: -8803744366485424464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 491
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698ba7994522fa420800000000000000
+      internalID: 2643369253037324438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 491
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916a8430854187ed0800000000000000
+      internalID: -2416158831839500775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 491
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab2867103692c490800000000000000
+      internalID: -7727448877319050325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 491
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0cd4913c0a538e0800000000000000
+      internalID: -1714287323341012827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 395
+        width: 90
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d990e1599c96260800000000000000
+      internalID: 7091420730562813323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 395
+        width: 90
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17467d82bf6362a80800000000000000
+      internalID: -8492039595010595727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 395
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe2eb8d919ccc030800000000000000
+      internalID: 3516406521917222647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 395
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fb9789850289080800000000000000
+      internalID: -9180552275507429489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 395
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6a62802b5002020800000000000000
+      internalID: 2314856470667503307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 395
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a1a673d27935f70800000000000000
+      internalID: 9174843086342855246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 299
+        width: 90
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd4af9cb59b01d20800000000000000
+      internalID: 3247299135215914484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 299
+        width: 90
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a18dd9f64035bd0800000000000000
+      internalID: -2642763678900282775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 299
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f9026a149c6d710800000000000000
+      internalID: 1717781591685635852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 299
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84d5af184a5036b0800000000000000
+      internalID: -5318651894109449073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 299
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccb9101232053930800000000000000
+      internalID: 4122203447969299661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 299
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12f55c9f847c2db0800000000000000
+      internalID: -4815345741413879268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 203
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddc392048e50ce20800000000000000
+      internalID: 3368796442345065939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 258
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7242489884a6f1750800000000000000
+      internalID: 6277853265355088935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 256
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43e712a2e04e29e0800000000000000
+      internalID: -1644305471817391286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 220
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723649ee141b25e10800000000000000
+      internalID: 2185003665961804583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 262
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184e4afbfd09e2e60800000000000000
+      internalID: 7939442483768124545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 260
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a7af614bba0b260800000000000000
+      internalID: 7111372601585990145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 221
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe17a477d8907dab0800000000000000
+      internalID: -4983503959465758225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 263
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9787d904a71daa90800000000000000
+      internalID: -7301153427590510689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 261
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba396a11f6a74ea0800000000000000
+      internalID: -5888554433303201101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 250
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f7c3b66aad09590800000000000000
+      internalID: -7669389757113401502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 216
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22963ba5a4830c780800000000000000
+      internalID: -8664863791060391646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 239
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840159c08f470c490800000000000000
+      internalID: -7728048351855964088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 205
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2614fa810871221e0800000000000000
+      internalID: -2224189427030212254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 243
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a39b70bdb7a2ce0800000000000000
+      internalID: -1429193751079077232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 205
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb8e64f864a6b6d0800000000000000
+      internalID: -2975009733147194387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 244
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50855f9230da5f40800000000000000
+      internalID: 5718111592740388959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 205
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f172c9889050cd0800000000000000
+      internalID: -2592655528141840560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 203
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f435841a37e86b0800000000000000
+      internalID: -5292165375573405839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 248
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f656f2237b9f1170800000000000000
+      internalID: 8151404769374000886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 235
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7820b845d2a64a50800000000000000
+      internalID: 6505065748714498172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 219
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4058f5f44e3a2c0800000000000000
+      internalID: -4421439379591592710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 223
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6654153da2df6e60800000000000000
+      internalID: 7957810707948656236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 224
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b382355ea30e400800000000000000
+      internalID: 351345527551966020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 231
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ecf69443c97bf30800000000000000
+      internalID: 4591310093511806509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 205
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b34e7103337e8050800000000000000
+      internalID: 5804703632632726450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 201
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d95c59143d3a9410800000000000000
+      internalID: 1484566321145076183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 199
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1584225170383b0800000000000000
+      internalID: -5511553731620482590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 233
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8a290bb36407ce0800000000000000
+      internalID: -1409549461187548979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 199
+        width: 82
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35047021951499ad0800000000000000
+      internalID: -2695051051194171309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 199
+        width: 82
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21c6ed851528dc70800000000000000
+      internalID: 8995981030177816877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 204
+        width: 82
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90017ec933cff6c60800000000000000
+      internalID: 7813741177117020169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 206
+        width: 82
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8302c56307b257060800000000000000
+      internalID: 6950509360864567352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 207
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643005c9ddb638e10800000000000000
+      internalID: 2198719642641367878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 203
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8325bb618e168f0800000000000000
+      internalID: -548902495232837383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 203
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e667a18476cdbb430800000000000000
+      internalID: 3799873046766581358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 203
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3878863381e3695d0800000000000000
+      internalID: -3056187023461677181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 216
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030949325289bfa40800000000000000
+      internalID: 5403079463239192624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 207
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c278f903df6b84e0800000000000000
+      internalID: -1978364659103141181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 207
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed718351b1f32b80800000000000000
+      internalID: -8420621134340194837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 207
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da12668fbf4b585e0800000000000000
+      internalID: -1907919872824303187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 207
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877b4bf3d694a16e0800000000000000
+      internalID: -1866098362022578312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 207
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7228fbe421a6fb560800000000000000
+      internalID: 7331695345245585959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 207
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff5b90a4ab8c2640800000000000000
+      internalID: 5056570020815658994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 207
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44aa2c4e3852655f0800000000000000
+      internalID: -768385438011184572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111
+        width: 78
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35e7094a3a3c58d0800000000000000
+      internalID: -2856344041651968706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 143
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94358cf54e8356890800000000000000
+      internalID: -7465498253786066103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 150
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4648cf5e598123480800000000000000
+      internalID: -8921040879779806108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 144
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b391539698ffe900800000000000000
+      internalID: 716064191375578036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 126
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99263e745e9082300800000000000000
+      internalID: 227442661540455065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 151
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6afffcb8c7cfd80800000000000000
+      internalID: -8215554680298690845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 153
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb85e10115afbb00800000000000000
+      internalID: 846576747433790461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 149
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d088efe6ab6bf17e0800000000000000
+      internalID: -1792513214827821043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 137
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1681d8d8405b6e210800000000000000
+      internalID: 1361974968485484641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 140
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332d96117814e6c80800000000000000
+      internalID: -8327646612592930253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 121
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bdef34b5b348d690800000000000000
+      internalID: -7577231925358629450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 111
+        width: 72
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f08a888ce245d50800000000000000
+      internalID: 6725051582392045388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 115
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc290f313ff7f95f0800000000000000
+      internalID: -747738331131899189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 131
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700e676853447dff0800000000000000
+      internalID: -11465477365243897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 125
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77abd814d9ec0fe70800000000000000
+      internalID: 9147038017994472055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 111
+        width: 75
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e81a067393816090800000000000000
+      internalID: -8043002790143190809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 119
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407a50acddf4844f0800000000000000
+      internalID: -844337116136233212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 50
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e180d2deab4ce6a40800000000000000
+      internalID: 5363440513366951966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 40
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4754d5078ccd91960800000000000000
+      internalID: 7573327001836930420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 60
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6265fb4218395d250800000000000000
+      internalID: 5968839064026043942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 64
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2166da0ba85848880800000000000000
+      internalID: -8609609756909410798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 19
+        width: 112
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c5eabf5e518a5a0800000000000000
+      internalID: -6509929183849849782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 20
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f0eba422fbbb890800000000000000
+      internalID: -7441143805295849714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 15
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581acd46cfdb79da0800000000000000
+      internalID: -5938068691943120507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 23
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6dd6ef52cae2670800000000000000
+      internalID: 8515933224586565303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 21
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b9ab5bd8419b700800000000000000
+      internalID: 556498627828816652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 45
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5957719b397ee69d0800000000000000
+      internalID: -2779029298389486187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 22
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10badf8e361fcd8c0800000000000000
+      internalID: -3973035359834625279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 23
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140242085fe46a760800000000000000
+      internalID: 7468743848364351553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 41
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55863b40442baa850800000000000000
+      internalID: 6389115026584856661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 48
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73f2182484403760800000000000000
+      internalID: 7435518319187391357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 19
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c67cef9723848ed0800000000000000
+      internalID: -2412659294153705788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 23
+        width: 11
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24541092c52c78e60800000000000000
+      internalID: 7964548167108740418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_95
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 52
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56822f9575453b0c0800000000000000
+      internalID: -4561209263448250267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_96
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 44
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3ec8c369df84900800000000000000
+      internalID: 669063366367306677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_97
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 22
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f2f7f260b6d0bb0800000000000000
+      internalID: -4968197139608948931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_98
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 26
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2403c0d1d631a600800000000000000
+      internalID: 477723310256489515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_effects_96x96_SpriteSheet_99
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 19
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75eb6e6a22406c090800000000000000
+      internalID: -8014713939983679913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ice_effects_96x96_SpriteSheet_0: -5616873960237252445
+      ice_effects_96x96_SpriteSheet_1: -8803744366485424464
+      ice_effects_96x96_SpriteSheet_10: 2314856470667503307
+      ice_effects_96x96_SpriteSheet_11: 9174843086342855246
+      ice_effects_96x96_SpriteSheet_12: 3247299135215914484
+      ice_effects_96x96_SpriteSheet_13: -2642763678900282775
+      ice_effects_96x96_SpriteSheet_14: 1717781591685635852
+      ice_effects_96x96_SpriteSheet_15: -5318651894109449073
+      ice_effects_96x96_SpriteSheet_16: 4122203447969299661
+      ice_effects_96x96_SpriteSheet_17: -4815345741413879268
+      ice_effects_96x96_SpriteSheet_18: 3368796442345065939
+      ice_effects_96x96_SpriteSheet_19: 6277853265355088935
+      ice_effects_96x96_SpriteSheet_2: 2643369253037324438
+      ice_effects_96x96_SpriteSheet_20: -1644305471817391286
+      ice_effects_96x96_SpriteSheet_21: 2185003665961804583
+      ice_effects_96x96_SpriteSheet_22: 7939442483768124545
+      ice_effects_96x96_SpriteSheet_23: 7111372601585990145
+      ice_effects_96x96_SpriteSheet_24: -4983503959465758225
+      ice_effects_96x96_SpriteSheet_25: -7301153427590510689
+      ice_effects_96x96_SpriteSheet_26: -5888554433303201101
+      ice_effects_96x96_SpriteSheet_27: -7669389757113401502
+      ice_effects_96x96_SpriteSheet_28: -8664863791060391646
+      ice_effects_96x96_SpriteSheet_29: -7728048351855964088
+      ice_effects_96x96_SpriteSheet_3: -2416158831839500775
+      ice_effects_96x96_SpriteSheet_30: -2224189427030212254
+      ice_effects_96x96_SpriteSheet_31: -1429193751079077232
+      ice_effects_96x96_SpriteSheet_32: -2975009733147194387
+      ice_effects_96x96_SpriteSheet_33: 5718111592740388959
+      ice_effects_96x96_SpriteSheet_34: -2592655528141840560
+      ice_effects_96x96_SpriteSheet_35: -5292165375573405839
+      ice_effects_96x96_SpriteSheet_36: 8151404769374000886
+      ice_effects_96x96_SpriteSheet_37: 6505065748714498172
+      ice_effects_96x96_SpriteSheet_38: -4421439379591592710
+      ice_effects_96x96_SpriteSheet_39: 7957810707948656236
+      ice_effects_96x96_SpriteSheet_4: -7727448877319050325
+      ice_effects_96x96_SpriteSheet_40: 351345527551966020
+      ice_effects_96x96_SpriteSheet_41: 4591310093511806509
+      ice_effects_96x96_SpriteSheet_42: 5804703632632726450
+      ice_effects_96x96_SpriteSheet_43: 1484566321145076183
+      ice_effects_96x96_SpriteSheet_44: -5511553731620482590
+      ice_effects_96x96_SpriteSheet_45: -1409549461187548979
+      ice_effects_96x96_SpriteSheet_46: -2695051051194171309
+      ice_effects_96x96_SpriteSheet_47: 8995981030177816877
+      ice_effects_96x96_SpriteSheet_48: 7813741177117020169
+      ice_effects_96x96_SpriteSheet_49: 6950509360864567352
+      ice_effects_96x96_SpriteSheet_5: -1714287323341012827
+      ice_effects_96x96_SpriteSheet_50: 2198719642641367878
+      ice_effects_96x96_SpriteSheet_51: -548902495232837383
+      ice_effects_96x96_SpriteSheet_52: 3799873046766581358
+      ice_effects_96x96_SpriteSheet_53: -3056187023461677181
+      ice_effects_96x96_SpriteSheet_54: 5403079463239192624
+      ice_effects_96x96_SpriteSheet_55: -1978364659103141181
+      ice_effects_96x96_SpriteSheet_56: -8420621134340194837
+      ice_effects_96x96_SpriteSheet_57: -1907919872824303187
+      ice_effects_96x96_SpriteSheet_58: -1866098362022578312
+      ice_effects_96x96_SpriteSheet_59: 7331695345245585959
+      ice_effects_96x96_SpriteSheet_6: 7091420730562813323
+      ice_effects_96x96_SpriteSheet_60: 5056570020815658994
+      ice_effects_96x96_SpriteSheet_61: -768385438011184572
+      ice_effects_96x96_SpriteSheet_62: -2856344041651968706
+      ice_effects_96x96_SpriteSheet_63: -7465498253786066103
+      ice_effects_96x96_SpriteSheet_64: -8921040879779806108
+      ice_effects_96x96_SpriteSheet_65: 716064191375578036
+      ice_effects_96x96_SpriteSheet_66: 227442661540455065
+      ice_effects_96x96_SpriteSheet_67: -8215554680298690845
+      ice_effects_96x96_SpriteSheet_68: 846576747433790461
+      ice_effects_96x96_SpriteSheet_69: -1792513214827821043
+      ice_effects_96x96_SpriteSheet_7: -8492039595010595727
+      ice_effects_96x96_SpriteSheet_70: 1361974968485484641
+      ice_effects_96x96_SpriteSheet_71: -8327646612592930253
+      ice_effects_96x96_SpriteSheet_72: -7577231925358629450
+      ice_effects_96x96_SpriteSheet_73: 6725051582392045388
+      ice_effects_96x96_SpriteSheet_74: -747738331131899189
+      ice_effects_96x96_SpriteSheet_75: -11465477365243897
+      ice_effects_96x96_SpriteSheet_76: 9147038017994472055
+      ice_effects_96x96_SpriteSheet_77: -8043002790143190809
+      ice_effects_96x96_SpriteSheet_78: -844337116136233212
+      ice_effects_96x96_SpriteSheet_79: 5363440513366951966
+      ice_effects_96x96_SpriteSheet_8: 3516406521917222647
+      ice_effects_96x96_SpriteSheet_80: 7573327001836930420
+      ice_effects_96x96_SpriteSheet_81: 5968839064026043942
+      ice_effects_96x96_SpriteSheet_82: -8609609756909410798
+      ice_effects_96x96_SpriteSheet_83: -6509929183849849782
+      ice_effects_96x96_SpriteSheet_84: -7441143805295849714
+      ice_effects_96x96_SpriteSheet_85: -5938068691943120507
+      ice_effects_96x96_SpriteSheet_86: 8515933224586565303
+      ice_effects_96x96_SpriteSheet_87: 556498627828816652
+      ice_effects_96x96_SpriteSheet_88: -2779029298389486187
+      ice_effects_96x96_SpriteSheet_89: -3973035359834625279
+      ice_effects_96x96_SpriteSheet_9: -9180552275507429489
+      ice_effects_96x96_SpriteSheet_90: 7468743848364351553
+      ice_effects_96x96_SpriteSheet_91: 6389115026584856661
+      ice_effects_96x96_SpriteSheet_92: 7435518319187391357
+      ice_effects_96x96_SpriteSheet_93: -2412659294153705788
+      ice_effects_96x96_SpriteSheet_94: 7964548167108740418
+      ice_effects_96x96_SpriteSheet_95: -4561209263448250267
+      ice_effects_96x96_SpriteSheet_96: 669063366367306677
+      ice_effects_96x96_SpriteSheet_97: -4968197139608948931
+      ice_effects_96x96_SpriteSheet_98: 477723310256489515
+      ice_effects_96x96_SpriteSheet_99: -8014713939983679913
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
